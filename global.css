@@ -12,6 +12,8 @@ nav ul{
     flex-direction: row;
     justify-content: space-around;
     margin-top: 10%;
+    gap: 25%;
+    padding: 5%;
 }
 
 nav ul li a{
@@ -21,18 +23,27 @@ nav ul li a{
 nav ul li{
     list-style: none;
     color: white;
-    font-size: xx-large;
+    font-size: small;
     font-family: Georgia, 'Times New Roman', Times, serif ;
 }
 
 nav div img{
-    width: 90%;
+    width: 80%;
     display: grid;
-    padding: 15%;
+    padding: 19%;
 }
 nav div input{
     width: 100%;
+    height: 30%;
     display: grid;
-    margin-top: 20%;
+    margin-top: 25%;
+    color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+h2{
+    font-size: small;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: lighter;
+}
