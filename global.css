@@ -80,6 +80,46 @@ h3{
 @media (min-width: 768px){
     .trendingnow{
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    nav div img{
+        width: 80%;
+        display: grid;
+        margin-right: 5%;
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+    nav ul{
+        margin-top: 10%;
+        gap: 30%;
+        padding: 10%;
+    }
+    nav ul li{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 25px;
+        margin-top: 2%;
+    }
+    h3{
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    .fotos{
+        width: 170px;
+        height: 250px;
+    }
+    .raiting{
+        width: 95px;
+        height: auto;
+    }
+    .estrellas{
+        width: 50;
+    }
+}
+@media (min-width: 1024px){
+    .trendingnow{
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     nav div img{
