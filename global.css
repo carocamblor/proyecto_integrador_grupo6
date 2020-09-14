@@ -77,3 +77,40 @@ h3{
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
 }
+@media (min-width: 768px){
+    .trendingnow{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    nav div img{
+        width: 50%;
+        display: grid;
+        margin-top: 1%;
+        padding: 6% 2% 3% 5%
+    }
+    nav ul{
+        margin-top: 7%;
+        gap: 200px;
+        margin-right: 240px;
+        padding: 1% 1% 1% 1%;
+    }
+    nav ul li{
+        font-size: 25px;
+    }
+    nav div input{
+        margin-top: 16%;
+        padding: 5% 5% 5% 5%;
+    }
+    h2{
+        font-size: 21px;
+        margin-top: 2%;
+    }
+    h3{
+        font-size: 19px;
+        font-weight: lighter;
+    }
+    .fotos{
+        width: 200px;
+        height: 300px;
+    }
+}
