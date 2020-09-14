@@ -47,3 +47,33 @@ h2{
     color: white;
     font-weight: lighter;
 }
+h3{
+    font-size: small;
+    color: white;
+    font-weight: lighter;
+    margin-top: 2%;
+}
+
+
+.fotos{
+    width: 125px;
+    height: 200px;
+    margin-top: 5%;
+}
+.raiting{
+    width: 100px;
+    height: auto;
+}
+    
+/* diferenciar el raiting segun 3 y 4 estrellas xq la imagen es diferente*/ 
+
+.estrellas{
+    width: 80px;
+    height: auto;
+}
+.trendingnow{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  
+}
