@@ -84,9 +84,8 @@ nav div input{
 }
 @media (min-width: 1024px){
     nav {
-        margin-top: 3vh;
         padding: 0;
-        grid-template-columns: 15% 40% 20%;
+        grid-template-columns: 10% 40% 20%;
     }
     nav div img{
         width: 1000%;
@@ -99,11 +98,20 @@ nav div input{
         font-size: 25px;
     }
     nav div input{
-        margin-top: 16%;
-        padding: 5% 5% 5% 5%;
+        margin: 0;
+        height: 40%;
+        width: 90%;
     }
     #menu {
-        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
 }
