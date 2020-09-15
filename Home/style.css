@@ -10,11 +10,6 @@ h2{
     font-weight: lighter;
 }
 h3{
-    font-size: 14px;
-    color: white;
-    font-weight: 100;
-    margin-top: 2%;
-    margin-bottom: 2%;
     display: none;
 }
 
@@ -22,19 +17,11 @@ h3{
 .fotos{
     width: 100%;
 }
-.raiting{
-    width: 100px;
-    height: auto;
-    display: none;
-}
-    
-/* diferenciar el raiting segun 3 y 4 estrellas xq la imagen es diferente*/ 
 
-.estrellas{
-    width: 80px;
-    height: auto;
+.estrellas {
     display: none;
 }
+
 .trendingnow{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -51,41 +38,41 @@ h3{
         font-size: 25px;
         margin-top: 2%;
     }
-    h3{
-        font-size: 18px;
-        font-weight: lighter;
-    }
+
     .fotos{
         width: 100%;
     }
-    .raiting{
-        width: 95px;
-        height: auto;
-    }
-    .estrellas{
-        width: 50;
-    }
+
 }
 @media (min-width: 1024px){
     .trendingnow{
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     h2{
         font-size: 21px;
-        margin-top: 2%;
+        margin: 3px 0 3px 0;
     }
     h3{
         font-size: 19px;
         font-weight: lighter;
+        display: block;
+        color: white;
+        margin: 0;
+        font-family: Georgia;
     }
+
+    .trendingnow article {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
     .fotos{
         width: 100%;
     }
-    .raiting{
-        width: 115px;
-    }
-    .estrellas{
-        width: 90px;
+    .estrellas {
+        display: block;
+        width: 60%;
     }
 }
 
