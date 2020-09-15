@@ -1,0 +1,8 @@
+.AA{
+    width: 125px;
+    height: 200px;
+}
+.Action{
+    display: grid;
+    justify-content: space-between;
+}

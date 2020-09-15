@@ -7,6 +7,7 @@ nav{
 *{ background-color: black;
     
 }
+
 nav ul{
     display:flex;
     flex-direction: row;
@@ -41,47 +42,8 @@ nav div input{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h2{
-    font-size: 14px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    font-weight: lighter;
-}
-h3{
-    font-size: 14px;
-    color: white;
-    font-weight: 100;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
 
-
-.fotos{
-    width: 125px;
-    height: 200px;
-    margin-top: 10%;
-}
-.raiting{
-    width: 100px;
-    height: auto;
-}
-    
-/* diferenciar el raiting segun 3 y 4 estrellas xq la imagen es diferente*/ 
-
-.estrellas{
-    width: 80px;
-    height: auto;
-}
-.trendingnow{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-}
 @media (min-width: 768px){
-    .trendingnow{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     nav div img{
         width: 80%;
         display: grid;
@@ -97,31 +59,10 @@ h3{
     nav ul li{
         font-size: 25px;
     }
-    h2{
-        font-size: 25px;
-        margin-top: 2%;
-    }
-    h3{
-        font-size: 18px;
-        font-weight: lighter;
-    }
-    .fotos{
-        width: 170px;
-        height: 250px;
-    }
-    .raiting{
-        width: 95px;
-        height: auto;
-    }
-    .estrellas{
-        width: 50;
-    }
+    
 }
 @media (min-width: 1024px){
-    .trendingnow{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
+    
     nav div img{
         width: 50%;
         display: grid;
@@ -141,31 +82,6 @@ h3{
         margin-top: 16%;
         padding: 5% 5% 5% 5%;
     }
-    h2{
-        font-size: 21px;
-        margin-top: 2%;
-    }
-    h3{
-        font-size: 19px;
-        font-weight: lighter;
-    }
-    .fotos{
-        width: 200px;
-        height: 300px;
-    }
-    .raiting{
-        width: 115px;
-    }
-    .estrellas{
-        width: 90px;
-    }
+    
 }
 
-.AA{
-    width: 125px;
-    height: 200px;
-}
-.Action{
-    display: grid;
-    justify-content: space-between;
-}
