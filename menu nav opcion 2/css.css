@@ -29,6 +29,11 @@ div .logo {
     align-items: center;
 }
 
+div .botones_mobile {
+    display: none;
+}
+
+
 .menu .boton_menu {
     height: 70%;
     background-color: rgb(48, 48, 48);
@@ -58,4 +63,72 @@ h2 {
     font-size: 14pt;
     color: white;
     margin: 0;
+}
+
+#logo_chico {
+    display: none;
+}
+
+.h2mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px)
+{
+    #logo_chico {
+        display: block;
+    }
+    #logo_grande {
+        display: none;
+    }
+    #boton_newreleases {
+        display: none;
+    }
+    .menu {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media only screen and (max-width: 420px)
+{
+    nav .menu #boton_movies,#boton_series {
+        display: none;
+    }
+
+    nav .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav .navegador{
+        grid-template-columns: 15% 50% 30%;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .botones_mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 5vh;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .botones_mobile div {
+        height: 70%;
+        background-color: rgb(48, 48, 48);
+        border-radius: 5px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .h2mobile {
+        display: block;
+        font-size: 10pt;
+    }
+
 }
