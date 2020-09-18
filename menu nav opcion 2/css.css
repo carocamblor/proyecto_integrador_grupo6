@@ -1,0 +1,61 @@
+nav .navegador{
+    display: grid;
+    grid-template-columns: 10% 30% 50%;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    padding-left: 1vw;
+}
+
+nav div img {
+    width: 100%;
+}
+
+div .buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.menu .boton_menu {
+    height: 70%;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div {
+    text-align: center;
+}
+
+input {
+    width: 90%;
+    height: 40%;
+}
+
+body {
+    margin: 0;
+    background: rgb(22, 22, 22);
+}
+
+h2 {
+    font-family: georgia;
+    font-size: 14pt;
+    color: white;
+    margin: 0;
+}
