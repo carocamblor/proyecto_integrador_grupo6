@@ -59,10 +59,16 @@ body {
 }
 
 h2 {
-    font-family: georgia;
-    font-size: 14pt;
-    color: white;
-    margin: 0;
+    
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: white;
+     font-weight: lighter;
+     margin: 0;
+   
+}
+
+a{
+    text-decoration: none;
 }
 
 #logo_chico {
