@@ -1,126 +1,134 @@
-nav{
-    display:grid;
-    grid-template-columns: 20% 40% 20%;
+nav .navegador{
+    display: grid;
+    grid-template-columns: 10% 30% 50%;
     justify-content: space-between;
-
+    background-color: rgb(34, 34, 34);
+    padding-left: 1vw;
 }
 
-*{ background-color: black;
-    
+nav div img {
+    width: 100%;
 }
 
-nav ul{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10%;
-    margin-left: -30%;
-    gap: 17%;
-    padding: 8%;
+div .buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color:rgb(10, 218, 233);
-} 
-nav ul li{
-    list-style: none;
-    color:rgb(10, 218, 233);
-    font-size: medium;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
+div .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
 }
 
-#logo_mobile {
-    width: 57%;
-    margin-left: 2%;
-    margin-top: 20%;
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
 }
 
-#logo_desktop {
+div .botones_mobile {
     display: none;
 }
 
-nav div input{
-    width: 115%;
-    height: 23%;
-    margin-left: -19%;
-    display: grid;
-    margin-top: 35%;
-    color: aqua;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+.menu .boton_menu {
+    height: 70%;
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.div {
+    text-align: center;
+}
 
-@media (min-width: 768px){
-    nav{
-        padding: 0 1vw 0 1vw;
-    }
+input {
+    width: 90%;
+    height: 40%;
+}
 
-    nav div img{
-        width: 80%;
-        display: grid;
-        margin-right: 5%;
-        margin-top: 5%;
-        margin-bottom: 0%;
-    }
-    nav ul{
-        margin: 0;
-        gap: 7vw;
-        padding: 3vh;
-    }
-    nav ul li{
-        font-size: 25px;
-    }
-    #logo_mobile {
-        display: none;
-    }
-    
-    #logo_desktop {
-        width: 100%;
+body {
+    margin: 0;
+    background: rgb(22, 22, 22);
+}
+
+h2 {
+    font-family: georgia;
+    font-size: 14pt;
+    color: white;
+    margin: 0;
+}
+
+#logo_chico {
+    display: none;
+}
+
+.h2mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px)
+{
+    #logo_chico {
         display: block;
     }
+    #logo_grande {
+        display: none;
+    }
+    #boton_newreleases {
+        display: none;
+    }
+    .menu {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
-    nav div input {
-        margin-top: 3vh;
-        height: 3vh;
-    }
-    
 }
-@media (min-width: 1024px){
-    nav {
-        padding: 0;
-        grid-template-columns: 10% 40% 20%;
+
+@media only screen and (max-width: 420px)
+{
+    nav .menu #boton_movies,#boton_series {
+        display: none;
     }
-    nav div img{
-        margin-top: 10%;
-        margin-bottom: 13%;
-        margin-left: 9%;
-    }
-    nav ul{
-        padding: 0;
-        gap: 57%;
-        margin-left: -5%;
-    }
-    nav ul li{
-        font-size: 27px;
-    }
-    nav div input{
-        margin: 0;
-        height: 30%;
-        width: 100%;
-        margin-left: -43%
-    }
-    #menu {
+
+    nav .menu {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .search {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    nav .navegador{
+        grid-template-columns: 15% 50% 30%;
+        justify-content: space-around;
+        padding: 0;
     }
-    
-}
 
+    .botones_mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 5vh;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .botones_mobile div {
+        height: 70%;
+        background-color: rgb(48, 48, 48);
+        border-radius: 5px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .h2mobile {
+        display: block;
+        font-size: 10pt;
+    }
+
+}
