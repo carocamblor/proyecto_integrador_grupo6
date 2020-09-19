@@ -3,7 +3,7 @@ footer {
     background-color: rgb(34, 34, 34);
     height: auto;
     padding: 5vh;
-    margin-top: 5vh;
+    margin-top: -3vh;
 }
 
 #redes {
@@ -16,7 +16,7 @@ footer {
 
 #links_footer {
     display: flex;
-    margin-top: 5vh;
+    margin-top: 4vh;
     align-content: center;
     justify-content: space-between;
     padding: 0 37vw 0 37vw;
@@ -35,7 +35,7 @@ footer img {
 }
 
 footer h4 {
-    margin: 5vh 0 0 0;
+    margin: 4vh 0 0 0;
     color: white;
     font-family: georgia;
     font-size: 10pt;
@@ -74,7 +74,10 @@ div .buscador {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 86%;
+    margin-top: 1%;
 }
+
 
 div .logo {
     display: flex;
@@ -87,6 +90,7 @@ div .logo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
+    margin-left: -2%;
 }
 
 div .botones_mobile {
