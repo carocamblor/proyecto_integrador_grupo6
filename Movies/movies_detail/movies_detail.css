@@ -2,7 +2,6 @@ article.pelicula {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    width: 100vw;
     gap: 0.8vh;
 }
 
@@ -79,6 +78,11 @@ div.titulos_similares{
 #peliculastablet{
     display: none;
 }
+
+iframe {
+    display: none;
+}
+
 @media(min-width:768px){
 
 #sinopsistablet{
@@ -102,7 +106,27 @@ div.titulos_similares{
 #peliculastablet{
     display: block;
 }
+
 }
-@media(min-width:1024px){
-    
+@media(min-width: 1024px){
+    iframe {
+        overflow: hidden; height: 190px;
+        width: 100%;
+        display: block;
+    }
+    article.pelicula {
+        grid-template-columns: 65% 35%;
+    }
+    div.titulos_similares{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    h1 {
+        font-size: xx-large;
+    }
+    #stars {
+        width: 40%;
+    }
+    #peliculastablet{
+        display: none;
+    }
 }
