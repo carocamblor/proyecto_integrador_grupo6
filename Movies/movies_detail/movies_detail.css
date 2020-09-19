@@ -11,11 +11,11 @@ img.poster {
 }
 
 div.contenedor_poster {
-    width: 91%;
+    width: 100%;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 55% 40%;
+    justify-content: space-between;
     background: #303030;
     border-radius: 5px;
 }
@@ -28,7 +28,7 @@ div.descripcion_peli {
 }
 
 .descripcion_peli img{
-    width: 40%;
+    width: 100%;
 }
 
 h1 {
@@ -65,4 +65,41 @@ div.titulos_similares{
 
 .titulos_similares img {
     width: 100%;
+}
+
+#stars{
+    width: 80%;
+}
+#sinopsistablet{
+    display:none;
+}
+#titulotablet{
+    display: none;
+}
+#peliculastablet{
+    display: none;
+}
+@media(min-width:768px){
+
+#sinopsistablet{
+    display:block;
+}
+#sinopsismobile{
+    display: none;
+}
+p{
+    font-size: larger;
+}
+#titulomobile{
+    display: none;
+}
+#titulotablet{
+    display:block;
+}
+div.titulos_similares{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#peliculastablet{
+    display: block;
+}
 }
