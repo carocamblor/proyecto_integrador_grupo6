@@ -3,7 +3,7 @@ footer {
     background-color: rgb(34, 34, 34);
     height: auto;
     padding: 5vh;
-    margin-top: -3vh;
+    margin-top: 4vh;
 }
 
 #redes {
@@ -85,14 +85,6 @@ div .logo {
     padding: 10px;
 }
 
-div #contenedor_logo{
-    background-color: rgb(48, 48, 48);
-    border-radius: 5px;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .menu {
     display: grid;
@@ -127,6 +119,12 @@ div .botones_mobile {
 input {
     width: 90%;
     height: 40%;
+    border-radius: 30px;
+    background: #303030;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -136,7 +134,7 @@ body {
 
 h2 {
     
-      font-family: Georgia, 'Times New Roman', Times, serif;
+     font-family: Georgia, 'Times New Roman', Times, serif;
       color: white;
      font-weight: lighter;
      margin: 0;
@@ -199,7 +197,7 @@ a{
     /*para el footer*/
 
     footer {
-        margin: 0.8vh;
+        display: none;
     }
   
     #redes {

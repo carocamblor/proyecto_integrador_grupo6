@@ -1,5 +1,5 @@
 
-.trendingnow article{
+.listapeliculas article{
     padding: 2px;
 }
 
@@ -8,7 +8,9 @@ h3{
     display: none;
 }
 
-
+.pelisipad{
+    display: none;
+}
 .fotos{
     width: 100%;
 }
@@ -16,17 +18,22 @@ h3{
 .estrellas {
     display: none;
 }
-
-.trendingnow{
+#TN{
+    margin-top: 2vh;
+    font-size: large;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.listapeliculas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
 }
 @media (min-width: 768px){
-    .trendingnow{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .listapeliculas{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
-    .trendingnow article{
+    .listapeliculas article{
         padding: 3px;
     }
     h2{
@@ -34,13 +41,21 @@ h3{
         margin-top: 2%;
     }
 
+    .pelisipad{
+        display: block;
+    }
+
     .fotos{
         width: 100%;
     }
 
+    #TN{
+        font-size: x-large;
+    }
+
 }
 @media (min-width: 1024px){
-    .trendingnow{
+    .listapeliculas{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     h2{
@@ -59,7 +74,7 @@ h3{
         margin-top: 3%;
     }
 
-    .trendingnow article {
+    .listapeliculas article {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -72,9 +87,19 @@ h3{
         display: block;
         width: 45%;
         margin-top: 3%;
-        margin-bottom: 23%;
-}
     }
+
+    #TN{
+        font-size: x-large;
+        margin-top: 1%;
+        margin-bottom: 0.5%;
+    }
+
+    .pelisipad{
+        display: none;
+    }
+
+}
 
 
 .AA{

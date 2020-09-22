@@ -1,11 +1,14 @@
-.AA{
+.FF{
     width: 125px;
     height: 200px;
 }
-.Action{
+.Generos section{
     display: grid;
     justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
 }
+
 input[type="search"]{
     width:170px;
     margin:10px;
@@ -20,4 +23,10 @@ input[type="search"]:focus{
     background:#fff;
     width:300px;
     
+}
+
+.Generos h2{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
 }
