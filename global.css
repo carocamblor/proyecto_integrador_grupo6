@@ -60,22 +60,21 @@ footer h4 {
 
 nav .navegador{
     display: grid;
-    grid-template-columns: 10% 30% 50%;
+    grid-template-columns: 10% 40% 50%;
     justify-content: space-between;
     background-color: rgb(34, 34, 34);
-    padding-left: 1vw;
 }
 
 nav div img {
-    width: 100%;
+    width: 90%;
+    margin: 5px;
 }
 
 div .buscador {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 86%;
-    margin-top: 1%;
+    height: 100%;
 }
 
 
@@ -83,14 +82,27 @@ div .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7px;
+    padding: 10px;
+}
+
+div #contenedor_logo{
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
-    margin-left: -2%;
+}
+
+.boton_menu h2 {
+    margin: 0;
+    font-size: 19px;
 }
 
 div .botones_mobile {
