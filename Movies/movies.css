@@ -30,3 +30,7 @@ input[type="search"]:focus{
     margin-bottom: 2%;
     margin-left: 2%;
 }
+
+.pelisdesktop{
+    display: none;
+}
