@@ -9,22 +9,6 @@
     gap: 2%;
 }
 
-input[type="search"]{
-    width:170px;
-    margin:10px;
-    padding:10px 16px;
-    border-radius:32px;
-    outline:none;
-    border:2px solid rgb(10, 218, 233);
-    background:black;
-    transition:all 0.5s;
-}
-input[type="search"]:focus{
-    background:#fff;
-    width:300px;
-    
-}
-
 .Generos h2{
     margin-top: 3%;
     margin-bottom: 3%;
