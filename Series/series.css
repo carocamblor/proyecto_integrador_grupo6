@@ -40,9 +40,14 @@ article.categoria div a img{
 @media (min-width: 1024px){
     article.categoria{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1%;
+        margin: 1%;
     }
     article.categoria div.series_desktop{
         display: block;
+    }
+    h1{
+        margin: 1%;
     }
 
 }
