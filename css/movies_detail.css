@@ -21,7 +21,7 @@ div.contenedor_poster {
 }
 
 div.descripcion_peli {
-    width: 91%;
+    width: 96%;
     padding: 10px;
     background: #303030;
     border-radius: 5px;
@@ -49,8 +49,23 @@ h3{
     font-family: georgia;
 }
 
+.acciones_usuario_mobile{
+    padding: 10px;
+    background: #303030;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 96%;
+    justify-items: center;
+
+}
+
+.acciones_usuario_mobile img{
+    width: 40%;
+}
+
 .contenedor_titulos_similares {
-    width: 91%;
+    width: 96%;
     padding: 10px;
     background: #303030;
     border-radius: 5px;
@@ -87,6 +102,10 @@ iframe {
     display: none;
 }
 
+.acciones_usuario_desktop{
+    display: none;
+}
+
 @media(min-width:768px){
 
 #sinopsistablet{
@@ -111,6 +130,10 @@ div.titulos_similares{
     display: block;
 }
 
+.acciones_usuario_mobile {
+    display: none;
+}
+
 }
 @media(min-width: 1024px){
     iframe {
@@ -121,21 +144,27 @@ div.titulos_similares{
     article.pelicula {
         grid-template-columns: 69% 30%;
         justify-content: space-around;
-        margin-top: 2.4vh;
-        margin-right: 0.9vw;
-        margin-left: 0.9vw;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
     div.titulos_similares{
         grid-template-columns: 1fr 1fr 1fr;
     }
     div.descripcion_peli {
-        width: 97%;
+        width: 100%;
         padding: 10px;
         background: #303030;
         border-radius: 5px;
     }
+
+    .descripcion_peli img{
+        justify-self: end;
+        height: 100%;
+    }
+
     div.contenedor_titulos_similares{
-        width: 94%;
+        width: 100%;
         margin: 0;
         height: fit-content;
     }
@@ -151,6 +180,28 @@ div.titulos_similares{
     }
     #peliculastablet{
         display: none;
+    }
+
+    .acciones_usuario_desktop{
+        padding: 10px;
+        background: #303030;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .acciones_usuario_desktop img{
+        width: 52%;
+    }
+
+    .columna_acciones_y_similares{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 7px;
     }
 
 }

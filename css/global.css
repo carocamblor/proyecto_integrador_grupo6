@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 /*para el footer*/
 footer {
     background-color: rgb(34, 34, 34);
@@ -159,8 +163,8 @@ a{
     /*para el footer*/
 
     footer {
-        padding: 1.5vh;
-        margin-top: 1.5vh;
+        padding: 20px;
+        margin-top: 0.8vh;
     }
   
     #redes {
