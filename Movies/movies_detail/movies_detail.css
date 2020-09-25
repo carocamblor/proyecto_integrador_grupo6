@@ -115,18 +115,37 @@ div.titulos_similares{
         display: block;
     }
     article.pelicula {
-        grid-template-columns: 65% 35%;
+        grid-template-columns: 69% 30%;
+        justify-content: space-around;
+        margin-top: 2.4vh;
+        margin-right: 0.9vw;
+        margin-left: 0.9vw;
     }
     div.titulos_similares{
         grid-template-columns: 1fr 1fr 1fr;
     }
+    div.descripcion_peli {
+        width: 97%;
+        padding: 10px;
+        background: #303030;
+        border-radius: 5px;
+    }
+    div.contenedor_titulos_similares{
+        width: 94%;
+        margin: 0;
+    }
+    h1#titulos_similares{
+        font-size: x-large;
+    }
     h1 {
         font-size: xx-large;
     }
+
     #stars {
         width: 40%;
     }
     #peliculastablet{
         display: none;
     }
+
 }
