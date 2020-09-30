@@ -1,0 +1,33 @@
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    margin: 2%;
+}
+
+section article a img{
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    section{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    /*
+    section article a img{
+        height: 197px;
+    } */
+}
+
+@media (min-width: 1024px){
+    section{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1%;
+        margin: 1%;
+    }
+    /*
+    section article a img{
+        height: 259px;
+    }*/
+}
