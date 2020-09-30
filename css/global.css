@@ -2,6 +2,28 @@
     box-sizing: border-box;
 }
 
+/*para el scrollbar*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(34, 34, 34);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(48, 48, 48);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(92, 92, 92);
+  }
+
 /*para el footer*/
 footer {
     background-color: rgb(34, 34, 34);
