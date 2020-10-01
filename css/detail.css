@@ -49,6 +49,17 @@ h3{
     font-family: georgia;
 }
 
+.episodio_mobile{
+    width: 96%;
+    padding: 10px;
+    background: #303030;
+    border-radius: 5px;
+}
+
+.episodio_mobile img{
+    width: 40%;
+}
+
 .acciones_usuario_mobile{
     padding: 10px;
     background: #303030;
@@ -98,10 +109,6 @@ div.titulos_similares{
     display: none;
 }
 
-iframe {
-    display: none;
-}
-
 .acciones_usuario_desktop{
     display: none;
 }
@@ -109,6 +116,16 @@ iframe {
 .columna_acciones_y_similares{
     display: flex;
     justify-content: center;
+}
+
+.episodio_desktop {
+    display: none;
+}
+
+/*solo para movie*/
+
+iframe {
+    display: none;
 }
 
 @media(min-width:768px){
@@ -131,6 +148,9 @@ p{
 #titulotablet{
     display:block;
 }
+.episodio_mobile img{
+    width: 22%;
+}
 div.titulos_similares{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -144,17 +164,16 @@ div.titulos_similares{
 
 }
 @media(min-width: 1024px){
-    iframe {
-        overflow: hidden; height: 190px;
-        width: 100%;
-        display: block;
-    }
+
     article.pelicula {
         grid-template-columns: 69% 30%;
         justify-content: space-around;
         margin-top: 10px;
         margin-right: 10px;
         margin-left: 10px;
+    }
+    div.contenedor_poster {
+        grid-template-columns: 59% 40%;
     }
     div.titulos_similares{
         grid-template-columns: 1fr 1fr 1fr;
@@ -166,10 +185,28 @@ div.titulos_similares{
         border-radius: 5px;
     }
 
+    .episodio_desktop img{
+        width: 30%;
+    }
     .descripcion_peli img{
         justify-self: end;
         height: 100%;
     }
+    .episodio_mobile{
+        display: none;
+    }
+    .episodio_desktop{
+        display: block;
+        padding: 10px;
+        background: #3d3d3d;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+
+    img.poster{
+        height: 499px;
+    }
+
 
     div.contenedor_titulos_similares{
         width: 100%;
@@ -182,6 +219,7 @@ div.titulos_similares{
 
     #stars {
         width: 40%;
+        height: auto;
     }
     #peliculastablet{
         display: none;
@@ -207,6 +245,13 @@ div.titulos_similares{
         display: grid;
         grid-template-columns: 1fr;
         gap: 7px;
+    }
+    
+    /*solo para movie*/
+    iframe {
+        overflow: hidden; height: 190px;
+        width: 100%;
+        display: block;
     }
 
 }
