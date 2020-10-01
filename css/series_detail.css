@@ -166,6 +166,9 @@ div.titulos_similares{
         margin-right: 10px;
         margin-left: 10px;
     }
+    div.contenedor_poster {
+        grid-template-columns: 59% 40%;
+    }
     div.titulos_similares{
         grid-template-columns: 1fr 1fr 1fr;
     }
