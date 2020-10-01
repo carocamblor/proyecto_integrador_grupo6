@@ -211,7 +211,7 @@ div.titulos_similares{
     div.contenedor_titulos_similares{
         width: 100%;
         margin: 0;
-        height: fit-content;
+        height: 100%;
     }
     h1#titulos_similares{
         font-size: x-large;
@@ -238,12 +238,12 @@ div.titulos_similares{
     }
 
     .acciones_usuario_desktop img{
-        width: 52%;
+        width: 35%;
     }
 
     .columna_acciones_y_similares{
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
         gap: 7px;
     }
     
