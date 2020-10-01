@@ -2,6 +2,30 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    background: rgb(22, 22, 22);
+}
+
+h2 {
+    
+     font-family: Georgia, 'Times New Roman', Times, serif;
+      color: white;
+     font-weight: lighter;
+     margin: 0;
+   
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+}
+
+
+
+.h2mobile {
+    display: none;
+}
 /*para el scrollbar*/
 
 /* width */
@@ -153,31 +177,7 @@ input {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-body {
-    margin: 0;
-    background: rgb(22, 22, 22);
-}
-
-h2 {
-    
-     font-family: Georgia, 'Times New Roman', Times, serif;
-      color: white;
-     font-weight: lighter;
-     margin: 0;
-   
-}
-
-a{
-    text-decoration: none;
-    display: flex;
-}
-
 #logo_chico {
-    display: none;
-}
-
-.h2mobile {
     display: none;
 }
 
