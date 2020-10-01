@@ -21,7 +21,7 @@ h1{
 }
 
 section.categoria article a img{
-    height: 170px;
+    width: 100%;
     display:block;
 }
 
@@ -36,9 +36,6 @@ section.categoria article a img{
         font-size: xx-large;
     }
 
-    section.categoria article a img{
-        height: 197px;
-    }
 }
 
 @media (min-width: 1024px){
@@ -52,8 +49,5 @@ section.categoria article a img{
     }
     h1{
         margin: 1%;
-    }
-    section.categoria article a img{
-        height: 259px;
     }
 }
