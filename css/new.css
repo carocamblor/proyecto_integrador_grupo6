@@ -17,6 +17,10 @@ section article a img{
         row-gap: 1.5%;
     }
 
+    .ipad_hidden{
+        display: none;
+    }
+
     /*
     section article a img{
         height: 197px;
@@ -29,6 +33,9 @@ section article a img{
         column-gap: 1%;
         row-gap: 1.8%;
         margin: 1%;
+    }
+    .ipad_hidden{
+        display: block;
     }
     /*
     section article a img{
