@@ -119,6 +119,9 @@ iframe {
 #sinopsismobile{
     display: none;
 }
+h1{
+    font-size: xx-large;
+}
 p{
     font-size: larger;
 }
@@ -175,9 +178,6 @@ div.titulos_similares{
     }
     h1#titulos_similares{
         font-size: x-large;
-    }
-    h1 {
-        font-size: xx-large;
     }
 
     #stars {

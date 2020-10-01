@@ -4,35 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Series Detail &#124 Wolf</title>
-    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/series_detail.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="shortcut icon" href="img/img_nav_footer/favicon_wolf.png" type="image/png">
 </head>
 <body>
     <nav>
-    <div class="navegador">
-    <div class="logo">
-        <img id="logo_grande" src="img/img_nav_footer/logo_grande.png" alt="logo wolf">
-        <img id="logo_chico" src="img/img_nav_footer/logo_chico.png" alt="logo wolf">
+        <div class="navegador">
+        <div class="logo">
+            <img id="logo_grande" src="img/img_nav_footer/logo_grande.png" alt="logo wolf">
+            <img id="logo_chico" src="img/img_nav_footer/logo_chico.png" alt="logo wolf">
+        </div>
+        <div class="buscador">
+            <input type="text">
+        </div>
+        <div class="menu">
+            <div class="boton_menu" id="boton_home"><a href="home.html"><h2>Home</h2></a></div>
+            <div class="boton_menu" id="boton_newreleases"><a href="new_releases.html"><h2>New Releases</h2></a></div>
+            <div class="boton_menu" id="boton_movies"><a href="movies.html"><h2>Movies</h2></a></div>
+            <div class="boton_menu" id="boton_series"><a href="series.html"><h2>Series</h2></a></div>
+        </div>
+        </div>
+        <div class="botones_mobile">
+            <div><a href="new_releases.html"><h2 class="h2mobile">New</h2></a></div>
+            <div><a href="movies.html"><h2 class="h2mobile">Movies</h2></a></div>
+            <div><a href="series.html"><h2 class="h2mobile">Series</h2></a></div>
+        </div>
+    </nav>
+    <section>
+    <article class="pelicula">
+       
+        <div class="descripcion_peli">
+           
+            <h1 id="titulomobile">Black Mirror</h1>
+        <div class="contenedor_poster">
+           <div> <h1 id="titulotablet">Black Mirror</h1>  
+           <img id="stars" src="img/estrellas_home/estrellas5.png" alt="rating">
+           <h3>Cast:</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ipsam!</p>
+            <h3>Year:</h3>
+            <p>2011 - 2019</p>
+           <div id="sinopsistablet"><h3>Synopsis:</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident inventore totam officiis. Eveniet molestiae deleniti temporibus voluptas a consequatur minima!</p>
+            <div class="episodio_desktop"> 
+                <h3>Top Rated Episode: S2.E4 "White Christmas"</h3>
+                <img src="img/estrellas_home/estrellas5.png" alt="rating">
+                <p>Three interconnected tales of technology run amok during the Christmas season are told by two men at a remote outpost in a frozen wilderness.</p>
+            </div>
+        </div>
+        </div>
+
+        <img class="poster" src="img/img_series_detail/black_mirror.jpg" alt="Black Mirror">
+        </div >
+           <div id="sinopsismobile">
+            <h3>Synopsis:</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident inventore totam officiis. Eveniet molestiae deleniti temporibus voluptas a consequatur minima!</p>
+            </div>
+        </div>
     </div>
-    <div class="buscador">
-        <input type="text">
+
+    <div class="episodio_mobile"> 
+        <h3>Top Rated Episode:</h3>
+        <h3>S2.E4 "White Christmas"</h3>
+        <img src="img/estrellas_home/estrellas5.png" alt="rating">
+        <p>Three interconnected tales of technology run amok during the Christmas season are told by two men at a remote outpost in a frozen wilderness.</p>
     </div>
-    <div class="menu">
-        <div class="boton_menu" id="boton_home"><a href="home.html"><h2>Home</h2></a></div>
-        <div class="boton_menu" id="boton_newreleases"><a href="new_releases.html"><h2>New Releases</h2></a></div>
-        <div class="boton_menu" id="boton_movies"><a href="movies.html"><h2>Movies</h2></a></div>
-        <div class="boton_menu" id="boton_series"><a href="series.html"><h2>Series</h2></a></div>
-    </div>
-    </div>
-    <div class="botones_mobile">
-        <div><a href="new_releases.html"><h2 class="h2mobile">New</h2></a></div>
-        <div><a href="movies.html"><h2 class="h2mobile">Movies</h2></a></div>
-        <div><a href="series.html"><h2 class="h2mobile">Series</h2></a></div>
-    </div>
-</nav>
-    
+
+
+
+        <div class="acciones_usuario_mobile">
+            <img src="img/img_movie_detail/corazon.png" alt="favorites">
+            <img src="img/img_movie_detail/share.png" alt="share">
+            <img src="img/img_movie_detail/rate.png" alt="rate">
+        </div>
+        <div class="columna_acciones_y_similares">
+
+            <div class="acciones_usuario_desktop">
+                <img src="img/img_movie_detail/corazon.png" alt="favorites">
+                <img src="img/img_movie_detail/share.png" alt="share">
+                <img src="img/img_movie_detail/rate.png" alt="rate">
+            </div>
+
+        <div class="contenedor_titulos_similares">
+            <h1 id="titulos_similares">More Like This</h1>
+            <div class="titulos_similares">
+                <div><a href="series_detail.html"><img src="img/img_series_detail/casa_de_papel.jpg" alt="Casa de Papel"></a></div>
+                <div><a href="series_detail.html"><img src="img/img_series_detail/Designated_Survivorx.jpg" alt="superman"></a></div>
+                <div><a href="series_detail.html"><img src="img/img_series_detail/house-of-cards.jpg" alt="arrow"></a></div>
+                <div><a href="series_detail.html"><img src="img/img_series_detail/sex_education.jpg" alt="avengers"></a></div>
+                <div><a href="series_detail.html"><img src="img/img_series_detail/stranger_things.jpg" alt="spiderman"></a></div>
+                <div><a href="series_detail.html"><img src="img/img_series_detail/the100.jpg" alt="transformers"></a></div>
+                <div id="peliculastablet"><a href="series_detail.html"></a><img src="img/img_series_detail/greys anatomy.jpeg" alt="terminator"></a></div>
+                <div id="peliculastablet"><a href="series_detail.html"></a><img src="img/img_series_detail/friends.jpg" alt="residentevil"></a></div>
+            </div>
+        </div>
+ 
+    </article>
+</section>
+
+<footer>
+    <article id="redes">
+        <div class="redes_sociales"><a href="https://www.instagram.com"><img src="img/img_nav_footer/instagram.png" alt="instagram"></a></div>
+        <div class="redes_sociales"><a href="https://www.youtube.com/"><img src="img/img_nav_footer/youtube.png" alt="youtube"></a></div>
+        <div class="redes_sociales"><a href="https://www.twitter.com"><img src="img/img_nav_footer/twitter.png" alt="twitter"></a></div>
+        <div class="redes_sociales"><a href="https://www.tumblr.com"><img src="img/img_nav_footer/tumblr.png" alt="tumblr"></a></div>
+    </article>
+    <article id="links_footer">
+        <a href=""> Help</a>
+        <a href=""> About Us</a>
+        <a href=""> Privacy Policy</a>
+    </article>
+    <article>
+        <h4>&#169 2020 Wolf & Co.</h4>
+        <h4>Carlos Escobar - Carolina Camblor - Josefina Martinez Frugoni</h4>
+    </article>
+</footer>
+
 </body>
-
-
 </html>
