@@ -5,6 +5,10 @@ section.categoria{
     margin: 2%;
 }
 
+section.categoria article{
+    overflow: hidden;
+}
+
 section.categoria article.displayipad{
     display: none;
 }
