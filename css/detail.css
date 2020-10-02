@@ -1,35 +1,4 @@
-article.pelicula {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 0.8vh;
-}
-
-img.poster {
-    width: 100%;
-
-}
-
-div.contenedor_poster {
-    width: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 55% 40%;
-    justify-content: space-between;
-    background: #303030;
-    border-radius: 5px;
-}
-
-div.descripcion_peli {
-    width: 96%;
-    padding: 10px;
-    background: #303030;
-    border-radius: 5px;
-}
-
-.descripcion_peli img{
-    width: 100%;
-}
+/*mobile first*/
 
 h1 {
     margin: 1vh 0 1vh 0;
@@ -49,6 +18,42 @@ h3{
     font-family: georgia;
 }
 
+/*una columna con 3 o 4 cajas adentro*/
+article.pelicula {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.8vh;
+}
+
+/*la primera caja*/
+div.descripcion_peli {
+    width: 96%;
+    padding: 10px;
+    background: #303030;
+    border-radius: 5px;
+}
+
+/*la info y el poster en dos columnas*/
+div.contenedor_poster {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 55% 40%;
+    justify-content: space-between;
+}
+
+img.poster {
+    width: 100%;
+
+}
+
+#stars{
+    width: 80%;
+}
+
+/*caja solo para series detail*/
+
 .episodio_mobile{
     width: 96%;
     padding: 10px;
@@ -60,6 +65,7 @@ h3{
     width: 40%;
 }
 
+/*acciones usuarios, segunda/tercera caja*/
 .acciones_usuario_mobile{
     padding: 10px;
     background: #303030;
@@ -74,6 +80,8 @@ h3{
 .acciones_usuario_mobile img{
     width: 40%;
 }
+
+/*caja titulos similares*/
 
 .contenedor_titulos_similares {
     width: 96%;
@@ -93,12 +101,15 @@ div.titulos_similares{
     width: 100%;
     height: 163px;
     display:block;
-
 }
 
-#stars{
-    width: 80%;
+.columna_acciones_y_similares_desktop{
+    display: flex;
+    justify-content: center;
 }
+
+/*para que no se vea en mobile*/
+
 #sinopsistablet{
     display:none;
 }
@@ -113,50 +124,45 @@ div.titulos_similares{
     display: none;
 }
 
-.columna_acciones_y_similares{
-    display: flex;
-    justify-content: center;
-}
-
 .episodio_desktop {
     display: none;
 }
 
-/*solo para movie*/
+/*solo para movie detail*/
 
 iframe {
     display: none;
 }
 
+/*ipad*/
 @media(min-width:768px){
 
-#sinopsistablet{
-    display:block;
-}
-#sinopsismobile{
-    display: none;
-}
+
 h1{
     font-size: xx-large;
 }
 p{
     font-size: larger;
 }
-#titulomobile{
-    display: none;
-}
-#titulotablet{
-    display:block;
-}
+
 .episodio_mobile img{
     width: 22%;
 }
+
 div.titulos_similares{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .titulos_similares img {
     height: 260px;
+}
+
+#sinopsistablet{
+    display:block;
+}
+
+#titulotablet{
+    display:block;
 }
 
 #peliculastablet{
@@ -167,9 +173,20 @@ div.titulos_similares{
     display: none;
 }
 
+#sinopsismobile{
+    display: none;
 }
+
+#titulomobile{
+    display: none;
+}
+
+}
+
+/*desktop*/
 @media(min-width: 1024px){
 
+    /*dos columnas grandes*/
     article.pelicula {
         grid-template-columns: 69% 30%;
         justify-content: space-around;
@@ -177,25 +194,25 @@ div.titulos_similares{
         margin-right: 10px;
         margin-left: 10px;
     }
+
+    /*columnas info y poster*/
+    div.descripcion_peli {
+        width: 100%;
+    }
     div.contenedor_poster {
         grid-template-columns: 59% 40%;
     }
-    div.titulos_similares{
-        grid-template-columns: 1fr 1fr 1fr;
+    img.poster{
+        height: 100%;
     }
-    div.descripcion_peli {
-        width: 100%;
-        padding: 10px;
-        background: #303030;
-        border-radius: 5px;
+    #stars {
+        width: 40%;
+        height: auto;
     }
 
+    /*solo para series detail*/
     .episodio_desktop img{
         width: 30%;
-    }
-    .descripcion_peli img{
-        justify-self: end;
-        height: 100%;
     }
     .episodio_mobile{
         display: none;
@@ -208,10 +225,17 @@ div.titulos_similares{
         margin-top: 15px;
     }
 
-    img.poster{
-        height: 100%;
+    /*solo para movie*/
+    iframe {
+        overflow: hidden; height: 190px;
+        width: 100%;
+        display: block;
     }
 
+    /*titulos similares*/
+    div.titulos_similares{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     div.contenedor_titulos_similares{
         width: 100%;
@@ -227,14 +251,7 @@ div.titulos_similares{
         font-size: x-large;
     }
 
-    #stars {
-        width: 40%;
-        height: auto;
-    }
-    #peliculastablet{
-        display: none;
-    }
-
+    /*acciones usuario desktop*/
     .acciones_usuario_desktop{
         padding: 10px;
         background: #303030;
@@ -246,22 +263,17 @@ div.titulos_similares{
         justify-items: center;
         align-items: center;
     }
-
     .acciones_usuario_desktop img{
         width: 35%;
     }
-
-    .columna_acciones_y_similares{
+    .columna_acciones_y_similares_desktop{
         display: flex;
         flex-direction: column-reverse;
         gap: 7px;
     }
-    
-    /*solo para movie*/
-    iframe {
-        overflow: hidden; height: 190px;
-        width: 100%;
-        display: block;
-    }
 
+    /*para que no se vea*/    
+    #peliculastablet{
+        display: none;
+    }
 }
