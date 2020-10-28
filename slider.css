@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+h1{
+    color: white !important;
+    font-family: georgia !important;
+    font-weight: bold !important;
+    margin: 2% 0 0% 0 !important;
+}
+
+img{
+    height: 300px !important;
+}
+
+.slider{
+    margin-bottom: 2%;
+    margin-top: 0.1%;
+}
+
+section{
+    margin: 1%;
+}
