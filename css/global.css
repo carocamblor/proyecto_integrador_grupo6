@@ -143,6 +143,14 @@ div .logo {
     margin-left: 10px;
 }
 
+.boton_menu{
+    transition: box-shadow .3s;
+}
+
+.boton_menu:hover{
+    box-shadow: 0 0 11px rgba(255, 255, 255, 0.2);
+}
+
 .boton_menu h2 {
     margin: 0;
     font-size: 19px;
