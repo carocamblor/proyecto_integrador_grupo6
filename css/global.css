@@ -148,7 +148,7 @@ div .logo {
 }
 
 .boton_menu:hover{
-    box-shadow: 0 0 11px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 11px #494949;
 }
 
 .boton_menu h2 {

@@ -6,11 +6,34 @@ h1{
     color: white !important;
     font-family: georgia !important;
     font-weight: bold !important;
-    margin: 2% 0 0% 0 !important;
+    margin: 0 0 0.5% 0 !important;
+    font-size: xx-large;
 }
 
 div.uk-panel img{
     height: 300px !important;
+}
+
+.uk-slider{
+    margin-bottom: 0.5%;
+}
+
+div.uk-card-body{
+    padding: 10px;
+    text-align: center;
+
+}
+
+.uk-card-default {
+    background: rgba(53, 53, 53, 0.4)
+}
+
+img.estrellas{
+    height: 30px;
+}
+
+img.poster{
+    height: 309.66px
 }
 
 .slider{
@@ -19,5 +42,5 @@ div.uk-panel img{
 }
 
 section{
-    margin: 1%;
+    margin: 0.5% 1%;
 }
