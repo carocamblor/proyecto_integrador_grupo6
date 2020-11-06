@@ -100,7 +100,7 @@ window.onload = function () {
                 contenedorImagen.innerHTML +=
                 `
                 <li>
-                    <a href="movies_detail.html"> 
+                    <a href="series_detail.html"> 
                         <div class="uk-panel">
                             <img src="${imgURL + serie.poster_path}" alt="${serie.name}">
                     </a>
