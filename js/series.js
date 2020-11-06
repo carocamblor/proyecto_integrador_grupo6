@@ -2,13 +2,13 @@ window.onload = function () {
         var genres =  [
           {
             "idHTML": "action",
-            "id": 28,
-            "name": "Action"
+            "id": 10759,
+            "name": "Action & Adventure"
           },
           {
-            "idHTML": "adventure",
-            "id": 12,
-            "name": "Adventure"
+            "idHTML": "animation",
+            "id": 16,
+            "name": "Animation"
           },
           {
             "idHTML": "comedy",
@@ -21,6 +21,11 @@ window.onload = function () {
             "name": "Crime"
           },
           {
+            "idHTML": "documentary",
+            "id": 99,
+            "name": "Documentary"
+          },
+          {
             "idHTML": "drama",
             "id": 18,
             "name": "Drama"
@@ -31,19 +36,9 @@ window.onload = function () {
             "name": "Family"
           },
           {
-            "idHTML": "fantasy",
-            "id": 14,
-            "name": "Fantasy"
-          },
-          {
-            "idHTML": "horror",
-            "id": 27,
-            "name": "Horror"
-          },
-          {
-            "idHTML": "music",
-            "id": 10402,
-            "name": "Music"
+            "idHTML": "kids",
+            "id": 10762,
+            "name": "Kids"
           },
           {
             "idHTML": "mystery",
@@ -51,19 +46,34 @@ window.onload = function () {
             "name": "Mystery"
           },
           {
-            "idHTML": "romance",
-            "id": 10749,
-            "name": "Romance"
+            "idHTML": "news",
+            "id": 10763,
+            "name": "News"
+          },
+          {
+            "idHTML": "reality",
+            "id": 10764,
+            "name": "Reality"
           },
           {
             "idHTML": "science",
-            "id": 878,
-            "name": "Science Fiction"
+            "id": 10765,
+            "name": "Sci-Fi & Fantasy"
           },
           {
-            "idHTML": "thriller",
-            "id": 53,
-            "name": "Thriller"
+            "idHTML": "soap",
+            "id": 10766,
+            "name": "Soap"
+          },
+          {
+            "idHTML": "talk",
+            "id": 10767,
+            "name": "Talk"
+          },
+          {
+            "idHTML": "war",
+            "id": 10768,
+            "name": "War & Politics"
           },
           {
             "idHTML": "western",
@@ -75,7 +85,7 @@ window.onload = function () {
 
     for (let i = 0; i < genres.length; i++) {
         const element = genres[i];
-        fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&include_adult=false&with_genres=${element.id}`)
+        fetch(`https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&page=1&with_genres=${element.id}&include_null_first_air_dates=false`)
         .then(function (response) {
             return response.json()
         })
@@ -83,7 +93,7 @@ window.onload = function () {
             console.log(data);
     
             for (let i = 0; i < data.results.length; i++) {
-                var pelicula = data.results[i];
+                var serie = data.results[i];
                 
                 var contenedorImagen = document.querySelector(`#${element.idHTML}`);
     
@@ -92,7 +102,7 @@ window.onload = function () {
                 <li>
                     <a href="movies_detail.html"> 
                         <div class="uk-panel">
-                            <img src="${imgURL + pelicula.poster_path}" alt="${pelicula.title}">
+                            <img src="${imgURL + serie.poster_path}" alt="${serie.name}">
                     </a>
                 </li>`
             };

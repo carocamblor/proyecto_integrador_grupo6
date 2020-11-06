@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Series &#124 Wolf</title>
+    <title>Document</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
+    
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/seriesypelis.css">
-    <link rel="shortcut icon" href="img/img_nav_footer/favicon_wolf.png" type="image/png">
+    <script src="js/atajos.js"></script>
+    <script src="js/series.js"></script>
 </head>
+
 <body>
+
     <nav>
         <div class="navegador">
         <div class="logo">
@@ -32,49 +42,200 @@
         </div>
     </nav>
 
+    <section>
 
-    <h1>Most Popular</h1>
-    <section class="categoria">
-        <article><a href="series_detail.html"><img src="img/img_series/img_popular/friends.jpg" alt="friends"></a></article>
-        <article><a href="series_detail.html"><img src="img/img_series/img_popular/brooklyn99.jpg" alt="brooklyn 99"></a></article>
-        <article><a href="series_detail.html"><img src="img/img_series/img_popular/the100.jpg" alt="the 100"></a></article>
-        <article class="displayipad"><a href="series_detail.html"><img src="img/img_series/img_popular/suits.jpg" alt="suits"></a></article>
-        <article class="displayipad"><a href="series_detail.html"><img src="img/img_series/img_popular/agents-of-shield.jpg" alt="agents of shield"></a></article>
-        <article class="displaydesktop"><a href="series_detail.html"><img src="img/img_series/img_popular/the vampire diaries.jpg" alt="vampire diaries"></a></article>
-        <article class="displaydesktop"><a href="series_detail.html"><img src="img/img_series/img_popular/greys anatomy.jpeg" alt="greys anatomy"></a></article>
-    </section>
+    <h1>Action & Adventure</h1>
 
-    <h1>Netflix Originals</h1>
-    <section class="categoria">
-        <article><a href="series_detail.html"><img src="img/img_series/img_netflix/black_mirror.jpg" alt="blak mirror"></a></article>
-        <article><a href="series_detail.html"><img src="img/img_series/img_netflix/casa_de_papel.jpg" alt="casa de papel"></a></article>
-        <article><a href="series_detail.html"><img src="img/img_series/img_netflix/Designated_Survivorx.jpg" alt="designated survivor"></a></article>
-        <article class="displayipad"><a href="series_detail.html"><img src="img/img_series/img_netflix/house-of-cards.jpg" alt="house of cards"></a></article>
-        <article class="displayipad"><a href="series_detail.html"><img src="img/img_series/img_netflix/narcos.jpg" alt="narcos"></a></article>
-        <article class="displaydesktop"><a href="series_detail.html"><img src="img/img_series/img_netflix/sex_education.jpg" alt="sex education"></a></article>
-        <article class="displaydesktop"><a href="series_detail.html"><img src="img/img_series/img_netflix/stranger_things.jpg" alt="stranger things"></a></article>
-    </section>
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
 
-    <h1>Action</h1>
-    <section class="categoria">
-        <article><a href="series_detail.html"><img src="img/img_series/series_action/daredevil.jpg" alt="Daredevil"></a></article>
-        <article><a href="series_detail.html"><img src="img/img_series/series_action/flash2.jpg" alt="The Flash"></a></article>
-        <article><a href="series_detail.html"><img src="img/img_series/series_action/got.jpg" alt="GOT"></a></article>
-        <article class="displayipad"><a href="series_detail.html"><img src="img/img_series/series_action/jessica_jones.jpg" alt="Jessics Jones"></a></article>
-        <article class="displayipad"><a href="series_detail.html"><img src="img/img_series/series_action/prison_break.jpg" alt="Prison Break"></a></article>
-        <article class="displaydesktop"><a href="series_detail.html"><img src="img/img_series/series_action/shield.jpg" alt="Shield"></a></article>
-        <article class="displaydesktop"><a href="series_detail.html"><img src="img/img_series/series_action/startrek.jpg" alt="Startrek"></a></article>
-    </section>
+        <ul id="action" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
 
-    <h1>CW Series</h1>
-    <section class="categoria">
-        <article><a href="series_detail.html"><img src="img/img_series/series_cw/arrow.jpg" alt="Arrow"></a></article>
-        <article><a href="series_detail.html"><img src="img/img_series/series_cw/supernatural.jpg" alt="Supernatural"></a></article>
-        <article><a href="series_detail.html"><img src="img/img_series/series_cw/legends.jpg" alt="Legends"></a></article>
-        <article class="displayipad"><a href="series_detail.html"><img src="img/img_series/series_cw/riverdale.jpg" alt="Riverdale"></a></article>
-        <article class="displayipad"><a href="series_detail.html"><img src="img/img_series/series_cw/supergirl.jpg" alt="Supergirl"></a></article>
-        <article class="displaydesktop"><a href="series_detail.html"><img src="img/img_series/series_cw/flash.jpg" alt="The Flash"></a></article>
-        <article class="displaydesktop"><a href="series_detail.html"><img src="img/img_series/series_cw/the100_2.jpg" alt="The 100"></a></article>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Comedy</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="comedy" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Animation</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="animation" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Drama</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="drama" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Family</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="family" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Crime</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="crime" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Kids</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="kids" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Animation</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="animation" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Documentary</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="documentary" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Reality</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="reality" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Mystery</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="mystery" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Sci-Fi & Fantasy</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="science" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Talk</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="talk" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Western</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="western" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>Soap</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="soap" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
+    <h1>War & Politics</h1>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+
+        <ul id="war" class="uk-slider-items uk-height-1-1 uk-grid">
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+
     </section>
 
     <footer>
@@ -95,8 +256,6 @@
         </article>
     </footer>
 
-
-
-
+    
 </body>
 </html>
