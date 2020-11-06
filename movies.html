@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies &#124 Wolf</title>
+    <title>Document</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
+    
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/seriesypelis.css">
-    <link rel="shortcut icon" href="img/img_nav_footer/favicon_wolf.png" type="image/png">
+    <script src="js/atajos.js"></script>
+    <script src="js/movies.js"></script>
 </head>
+
 <body>
+
     <nav>
         <div class="navegador">
         <div class="logo">
@@ -32,220 +42,282 @@
         </div>
     </nav>
 
-
+    <section>
 
     <h1>Action</h1>
-<section class="categoria">
-    <article>
-       <a href="movies_detail.html"><img src="img/img_movies/Action/Maze-Runner-2.jpg" alt="Maze Runner 2"></a> 
-    </article>
 
-    <article>
-       <a href="movies_detail.html"><img src="img/img_movies/Action/transformers.jpg" alt="Transformers"></a>
-    </article>
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
+        
+        <ul class="uk-slider-items uk-height-1-1 uk-child-width-1-6@s uk-grid">
+            <li>
+                <a href="movies_detail.html"> 
+                    <div class="uk-panel">
+                        <img src="img/img_movies/Action/Maze-Runner-2.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="movies_detail.html"> 
+                    <div class="uk-panel">
+                        <img src="img/img_movies/Action/harry-potter.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="movies_detail.html"> 
+                    <div class="uk-panel">
+                        <img src="img/img_movies/Action/divergent.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="movies_detail.html"> 
+                    <div class="uk-panel">
+                        <img src="img/img_movies/Action/transformers.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="movies_detail.html"> 
+                    <div class="uk-panel">
+                        <img src="img/img_movies/Action/Terminator.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="movies_detail.html"> 
+                    <div class="uk-panel">
+                        <img src="img/img_movies/Action/old_guard.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="movies_detail.html"> 
+                    <div class="uk-panel">
+                        <img src="img/img_movies/Action/men-in-black-international.jpg" alt="">
+                </a>
+            </li>
+        </ul>
 
-    <article>
-       <a href="movies_detail.html"> <img src="img/img_movies/Action/Terminator.jpg" alt="Terminator"></a>
-    </article>   
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
 
-    <article class="displayipad">
-        <a href="movies_detail.html"> <img src="img/img_movies/Action/men-in-black-international.jpg" alt="MIB"></a>
-    </article>
+    <h1>Comedy</h1>
+    
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
 
-    <article class="displayipad">
-        <a href="movies_detail.html"> <img src="img/img_movies/Action/harry-potter.jpg"  alt="Harry Potter"></a>
-    </article>
+        <ul class="uk-slider-items uk-height-1-1 uk-child-width-1-6@s uk-grid">
+            <li>
+            <a href="movie_detail.html"> 
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comedy/birds_of_prey.jpg" alt="">
+            </a>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comedy/cats.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comedy/charlies-angels.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comedy/instantfamily.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comedy/life_of_the_party.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comedy/mamma_mia_here_we_go_again.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comedy/oceans_8.jpg" alt="">
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
 
-    <article class="displaydesktop">
-        <a href="movies_detail.html"> <img src="img/img_movies/Action/divergent.jpg" alt="Divergent"></a>
-    </article>
+    <h1>Family</h1>
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
 
-    <article class="displaydesktop">
-        <a href="movies_detail.html"> <img src="img/img_movies/Action/aquaman.jpg" alt="Aquaman"></a>
-    </article>
+        <ul class="uk-slider-items uk-height-1-1 uk-grid">
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Family/aladdin.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Family/bumblebee.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Family/hamilton.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Family/in-the-heights.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Family/lion-king.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Family/sonic.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Family/toy_story_4.jpg" alt="">
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
 
-</section>
+    <h1>Horror</h1>
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
 
-  <h1>Horror</h1>
-<section class="categoria">
-    <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/Horror/annabelle_comes_home.jpg" alt="Annabelle"></a>
-     </article>
- 
-     <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/Horror/IT.jpg" alt="IT Chapter 2"></a>
-     </article>
+        <ul class="uk-slider-items uk-height-1-1 uk-grid">
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Horror/annabelle_comes_home.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Horror/IT.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Horror/meg.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Horror/nun.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Horror/It1.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Horror/The-Conjuring-2.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Horror/the-purge.jpg" alt="">
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
 
-     <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/Horror/meg.jpg" alt="Meg"></a>
-     </article>  
+    <h1>RomCom</h1>
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
 
-     <article class="displayipad">
-        <a href="movies_detail.html"> <img src="img/img_movies/Horror/nun.jpg" alt="Nun"></a>
-    </article>
+        <ul class="uk-slider-items uk-height-1-1 uk-grid">
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/RomCom/before_we_go.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/RomCom/how-to-be-single.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/RomCom/man-up.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/RomCom/princes_diaries.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/RomCom/The-Lovebirds.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/RomCom/valentines-day.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/RomCom/what-to-expect.jpg" alt="">
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
 
-    <article class="displayipad">
-        <a href="movies_detail.html"> <img src="img/img_movies/Horror/The-Conjuring-2.jpg"  alt="the conjuring"></a>
-    </article>
+    <h1>Comic</h1>
+    <div class="uk-position-relative uk-visible-toggle uk-light uk-height-medium slider" uk-slider="sets: true" tabindex="-1" uk-slider>
 
-    <article class="displaydesktop">
-        <a href="movies_detail.html"> <img src="img/img_movies/Horror/the-purge.jpg" alt="the purge"></a>
-    </article>
-
-    <article class="displaydesktop">
-        <a href="movies_detail.html"> <img src="img/img_movies/Horror/It1.jpg" alt="IT"></a>
-    </article>
-
-</section>
-
- <h1>RomCom</h1>
- <section class="categoria"> 
-    <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/RomCom/before_we_go.jpg" alt="Before We Go"></a>
-     </article>
- 
-     <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/RomCom/how-to-be-single.jpg" alt="How To Be Single"></a>
-     </article>
-
-     <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/RomCom/man-up.jpg" alt="Man Up"></a>
-     </article>  
-
-     <article class="displayipad">
-        <a href="movies_detail.html"> <img src="img/img_movies/RomCom/princes_diaries.jpg" alt="Princess Diaries"></a>
-    </article>
-
-    <article class="displayipad">
-        <a href="movies_detail.html"> <img src="img/img_movies/RomCom/The-Lovebirds.jpg"  alt="Lovebirds"></a>
-    </article>
-
-    <article class="displaydesktop">
-        <a href="movies_detail.html"> <img src="img/img_movies/RomCom/valentines-day.jpg" alt="Valentines Day"></a>
-    </article>
-
-    <article class="displaydesktop">
-        <a href="movies_detail.html"> <img src="img/img_movies/RomCom/what-to-expect.jpg" alt="What To Expect"></a>
-    </article>
-
- </section>
-
- <h1>Comics</h1>
- <section class="categoria">
-    <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/Comic/avengers_endgame.jpg" alt="Avengers Endgame"></a>
-     </article>
- 
-     <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/Comic/batman_vs_superman.jpg" alt="Batman vs Superman"></a>
-     </article>
-
-     <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/Comic/black_widow.jpeg" alt="Black Widow"></a>
-     </article>  
-     
-     <article class="displayipad">
-        <a href="movies_detail.html"> <img src="img/img_movies/Comic/joker.jpg" alt="Joker"></a>
-    </article>
-
-    <article class="displayipad">
-        <a href="movies_detail.html"> <img src="img/img_movies/Comic/Spiderman-homecoming.jpg"  alt="Spiderman Homecoming"></a>
-    </article>
-
-    <article class="displaydesktop">
-        <a href="movies_detail.html"> <img src="img/img_movies/Comic/superman.jpg" alt="Superman"></a>
-    </article>
-
-    <article class="displaydesktop">
-        <a href="movies_detail.html"> <img src="img/img_movies/Comic/spiderman_far_from_home.jpg" alt="Spiderman Far From Home"></a>
-    </article>
-
- </section>
-
- <h1>Comedy</h1>
- <section class="categoria"> 
-    <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/Comedy/birds_of_prey.jpg" alt="Birds of Prey"></a>
-     </article>
- 
-     <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/Comedy/cats.jpg" alt="Cats"></a>
-     </article>
-
-     <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/Comedy/charlies-angels.jpg" alt="Charlies Angels"></a>
-     </article>  
-
-     <article class="displayipad">
-        <a href="movies_detail.html"> <img src="img/img_movies/Comedy/instantfamily.jpg" alt="Instant Family"></a>
-    </article>
-
-    <article class="displayipad">
-        <a href="movies_detail.html"> <img src="img/img_movies/Comedy/life_of_the_party.jpg"  alt="Life of The Party"></a>
-    </article>
-
-    <article class="displaydesktop">
-        <a href="movies_detail.html"> <img src="img/img_movies/Comedy/mamma_mia_here_we_go_again.jpg" alt="Mamma Mia 2"></a>
-    </article>
-
-    <article class="displaydesktop">
-        <a href="movies_detail.html"> <img src="img/img_movies/Comedy/oceans_8.jpg" alt="Oceans 8"></a>
-    </article>
-
- </section>
-
- <h1>Family</h1>
- <section class="categoria">
-    <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/Family/aladdin.jpg" alt="Aladdin"></a>
-     </article>
- 
-     <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/Family/bumblebee.jpg" alt="Bumblebee"></a>
-     </article>
-
-     <article>
-        <a href="movies_detail.html"> <img src="img/img_movies/Family/hamilton.jpg" alt="Hamilton"></a>
-     </article>  
-
-     <article class="displayipad">
-        <a href="movies_detail.html"> <img src="img/img_movies/Family/lion-king.jpg" alt="Lion King"></a>
-    </article>
-
-    <article class="displayipad">
-        <a href="movies_detail.html"> <img src="img/img_movies/Family/sonic.jpg"  alt="Sonic"></a>
-    </article>
-
-    <article class="displaydesktop">
-        <a href="movies_detail.html"> <img src="img/img_movies/Family/toy_story_4.jpg" alt="Toy Story 4"></a>
-    </article>
-
-    <article class="displaydesktop">
-        <a href="movies_detail.html"> <img src="img/img_movies/Family/in-the-heights.jpg" alt="In The Heights"></a>
-    </article>
-
- </section>
+        <ul class="uk-slider-items uk-height-1-1 uk-grid">
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comic/avengers_endgame.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comic/batman_vs_superman.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comic/black_widow.jpeg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comic/joker.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comic/Spiderman-homecoming.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comic/spiderman_far_from_home.jpg" alt="">
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="img/img_movies/Comic/superman.jpg" alt="">
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
 
 
+    </section>
 
- <footer>
-    <article id="redes">
-        <div class="redes_sociales"><a href="https://www.instagram.com"><img src="img/img_nav_footer/instagram.png" alt="instagram"></a></div>
-        <div class="redes_sociales"><a href="https://www.youtube.com/"><img src="img/img_nav_footer/youtube.png" alt="youtube"></a></div>
-        <div class="redes_sociales"><a href="https://www.twitter.com"><img src="img/img_nav_footer/twitter.png" alt="twitter"></a></div>
-        <div class="redes_sociales"><a href="https://www.tumblr.com"><img src="img/img_nav_footer/tumblr.png" alt="tumblr"></a></div>
-    </article>
-    <article id="links_footer">
-        <a href=""> Help</a>
-        <a href=""> About Us</a>
-        <a href=""> Privacy Policy</a>
-    </article>
-    <article>
-        <h4>&#169 2020 Wolf & Co.</h4>
-        <h4>Carolina Camblor - Carlos Escobar - Josefina Martinez Frugoni</h4>
-    </article>
-</footer>
+    <footer>
+        <article id="redes">
+            <div class="redes_sociales"><a href="https://www.instagram.com"><img src="img/img_nav_footer/instagram.png" alt="instagram"></a></div>
+            <div class="redes_sociales"><a href="https://www.youtube.com/"><img src="img/img_nav_footer/youtube.png" alt="youtube"></a></div>
+            <div class="redes_sociales"><a href="https://www.twitter.com"><img src="img/img_nav_footer/twitter.png" alt="twitter"></a></div>
+            <div class="redes_sociales"><a href="https://www.tumblr.com"><img src="img/img_nav_footer/tumblr.png" alt="tumblr"></a></div>
+        </article>
+        <article id="links_footer">
+            <a href=""> Help</a>
+            <a href=""> About Us</a>
+            <a href=""> Privacy Policy</a>
+        </article>
+        <article>
+            <h4>&#169 2020 Wolf & Co.</h4>
+            <h4>Carolina Camblor - Carlos Escobar - Josefina Martinez Frugoni</h4>
+        </article>
+    </footer>
 
-
+    
 </body>
 </html>

@@ -148,12 +148,22 @@ div .logo {
 }
 
 .boton_menu:hover{
-    box-shadow: 0 0 11px #494949;
+    box-shadow: 0 0 8px #494949;
 }
 
 .boton_menu h2 {
     margin: 0;
     font-size: 19px;
+    font-weight: bold;
+}
+
+.boton_menu a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
 }
 
 div .botones_mobile {
@@ -187,6 +197,9 @@ input {
 }
 #logo_chico {
     display: none;
+}
+.uk-link-toggle:focus .uk-link, .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover{
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 768px)
