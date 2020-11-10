@@ -22,6 +22,7 @@ window.onload = function () {
                         <img class="poster" src="${imgURL + pelicula.poster_path}" alt="${pelicula.original_title}">
                     </div>
                 <div class="uk-card-body">
+                <h3 class="uk-text-truncate">${pelicula.original_title} </h3>
                         <img class="estrellas" src="img/estrellas_home/estrellas5.png" alt="">
                     </div>
                 </div>
@@ -54,6 +55,7 @@ window.onload = function () {
                         <img class="poster" src="${imgURL + pelicula.poster_path}" alt="${pelicula.original_title}">
                     </div>
                 <div class="uk-card-body">
+                 <h3 class="uk-text-truncate">${pelicula.original_title} </h3>
                         <img class="estrellas" src="img/estrellas_home/estrellas5.png" alt="">
                     </div>
                 </div>
@@ -89,6 +91,7 @@ window.onload = function () {
                     </div>
 
                 <div class="uk-card-body">
+                <h3 class="uk-text-truncate">${pelicula.original_title} </h3>
                         <img class="estrellas" src="img/estrellas_home/estrellas5.png" alt="">
                     </div>
                 </div>
