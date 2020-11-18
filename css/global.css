@@ -205,6 +205,14 @@ input {
     text-decoration: none;
 }
 
+.dropdown {
+    background-color: rgb(48,48,48);
+    border-radius: 5px;
+}
+.uk-dropdown-nav>li.uk-active>a, .uk-dropdown-nav>li>a:focus, .uk-dropdown-nav>li>a:hover {
+    color: #ffff;
+}
+
 @media only screen and (max-width: 768px)
 {
     /*para el footer*/
