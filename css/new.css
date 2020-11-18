@@ -3,12 +3,20 @@ section{
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 0.6%;
     column-gap: 2%;
-    margin: 2%;
+    margin: 1%;
 }
 
 section article a img{
     width: 100%;
     display: block;
+}
+
+h1 {
+    color: white;
+    font-family: georgia;
+    font-weight: bold;
+    margin: 1%;
+    font-size: xx-large;
 }
 
 @media (min-width: 768px){

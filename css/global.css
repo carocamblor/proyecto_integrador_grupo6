@@ -188,6 +188,14 @@ div .botones_mobile {
     text-align: center;
 }
 
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
 input {
     width: 90%;
     height: 40%;
@@ -208,6 +216,7 @@ input {
 .dropdown {
     background-color: rgb(48,48,48);
     border-radius: 5px;
+    font-family: georgia
 }
 .uk-dropdown-nav>li.uk-active>a, .uk-dropdown-nav>li>a:focus, .uk-dropdown-nav>li>a:hover {
     color: #ffff;

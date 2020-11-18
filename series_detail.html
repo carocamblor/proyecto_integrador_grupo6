@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Series Detail &#124 Wolf</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
+
     <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="shortcut icon" href="img/img_nav_footer/favicon_wolf.png" type="image/png">
@@ -16,7 +23,9 @@
             <a href="home.html"><img id="logo_chico" src="img/img_nav_footer/logo_chico.png" alt="logo wolf"></a>
         </div>
         <div class="buscador">
-            <input type="text">
+            <form action="results.html" method="get">
+                <input type="text" name="q" placeholder="Search Wolf">
+            </form>
         </div>
         <div class="menu">
             <div class="boton_menu" id="boton_home"><a href="home.html"><h2>Home</h2></a></div>
