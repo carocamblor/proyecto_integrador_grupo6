@@ -10,7 +10,7 @@ window.onload = function () {
         for (let i = 0; i < data.results.length; i++) {
             var pelicula = data.results[i];
 
-            console.log("holaa " + pelicula.original_title + " " + imgURL + pelicula.poster_path)
+            
             
             var contenedorImagen = document.querySelector('#popular');
 
@@ -19,7 +19,7 @@ window.onload = function () {
             <li>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img class="poster" src="${imgURL + pelicula.poster_path}" alt="${pelicula.original_title}">
+                    <a href="movies_detail.html?idmovie=${pelicula.id}"> <img class="poster" src="${imgURL + pelicula.poster_path}" alt="${pelicula.original_title}"></a>
                     </div>
                 <div class="uk-card-body">
                 <h3 class="uk-text-truncate">${pelicula.original_title} </h3>

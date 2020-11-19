@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Detail &#124 Wolf</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
+    
     <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="shortcut icon" href="img/img_nav_footer/favicon_wolf.png" type="image/png">
+   <script src="js/atajos.js"></script> 
+   <script src="js/detail.js"></script>
+    
 </head>
 <body>
     <nav>
@@ -68,27 +78,8 @@
     <section>
     <article class="pelicula">
        
-        <div class="descripcion_peli">
-           
-            <h1 id="titulomobile">Birds Of Prey</h1>
-        <div class="contenedor_poster">
-           <div> <h1 id="titulotablet">Birds Of Prey</h1>  
-           <img id="stars" src="img/estrellas_home/estrellas5.png" alt="rating">
-           <h3>Cast:</h3>
-            <p>Margot Robbie, Rosie Perez, Mary Elizabeth Winstead</p>
-            <h3>Duration:</h3>
-            <p>109 min</p>
-           <div id="sinopsistablet"><h3>Synopsis:</h3>
-            <p>After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.</p>
-        </div> 
-        <iframe src="https://www.youtube.com/embed/YjpsGw7YlU8"> Trailer</iframe>
-           </div>
-        <img class="poster" src="img/img_movie_detail/birds_of_prey.png" alt="Birds Of Prey">
-        </div >
-           <div id="sinopsismobile">
-            <h3>Synopsis:</h3>
-            <p>After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.</p>
-            </div>
+        <div class="descripcion_peli" id="titulojs">
+            
         </div>
 
         <div class="acciones_usuario_mobile">
@@ -105,18 +96,9 @@
                 <img src="img/img_movie_detail/rate.png" alt="rate">
             </div>
 
-        <div class="contenedor_titulos_similares">
+        <div class="contenedor_titulos_similares" >
             <h1 id="titulos_similares">More Like This</h1>
-            <div class="titulos_similares">
-                <div><a href="movies_detail.html"><img src="img/img_movie_detail/suicide_squad.jpg" alt=""></a></div>
-                <div><a href="movies_detail.html"><img src="img/img_movie_detail/superman.jpg" alt="superman"></a></div>
-                <div><a href="series_detail.html"><img src="img/img_movie_detail/arrow.jpg" alt="arrow"></a></div>
-                <div><a href="movies_detail.html"><img src="img/img_movie_detail/avengers_infinity_war.jpg" alt="avengers"></a></div>
-                <div><a href="movies_detail.html"><img src="img/img_movie_detail/spiderman3.jpg" alt="spiderman"></a></div>
-                <div><a href="movies_detail.html"><img src="img/img_movie_detail/transformers.jpg" alt="transformers"></a></div>
-                <div id="peliculastablet"><a href="movies_detail.html"></a><img src="img/img_movie_detail/terminator.jpg" alt="terminator"></a></div>
-                <div id="peliculastablet"><a href="movies_detail.html"></a><img src="img/img_movie_detail/resident evil.jpg" alt="residentevil"></a></div>
-            </div>
+            <div class="titulos_similares" id="similares"></div>
         </div>
         </div>
  
