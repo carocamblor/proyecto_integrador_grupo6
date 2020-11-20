@@ -29,28 +29,30 @@ window.onload = function () {
             </li>
             `
             puntos = pelicula.vote_average
-            console.log(puntos)
-
             var estrellas
-           
-            switch (puntos) {
-                case 5:
-                    estrellas = 3
-                    console.log(`tiene ${estrellas} estrellas`)
-                    break;
-                case 7:
-                    estrellas = 4
-                    console.log(`tiene ${estrellas} estrellas`)
-                    break;
-                case 8.1:
-                    estrellas = 5
-                    console.log(`tiene ${estrellas} estrellas`)
-                    break;
+    switch (true) {
+        case (puntos <= 2):
+            estrellas = 1
+            break;
+        case (puntos <= 4):
+            estrellas = 2
+            break;
+        case (puntos <= 6):
+            estrellas = 3
+            break;
+        case (puntos <= 8):
+            estrellas = 4
+            break;
+        case (puntos <= 10):
+            estrellas = 5
+            break;
+        case (puntos == 0):
+            estrellas = 0
+            break;
+    }
+
             
-                default:
-                    estrellas = 0
-                    break;
-            }
+           
         };
 
     })
@@ -79,11 +81,33 @@ window.onload = function () {
                     </div>
                 <div class="uk-card-body">
                  <h3 class="uk-text-truncate">${pelicula.original_title} </h3>
-                        <img class="estrellas" src="img/estrellas_home/estrellas5.png" alt="">
+                        <img class="estrellas" src="img/estrellas_home/estrellas${estrellas}.png" alt="">
                     </div>
                 </div>
             </li>
             `
+            puntos = pelicula.vote_average
+            var estrellas
+    switch (true) {
+        case (puntos <= 2):
+            estrellas = 1
+            break;
+        case (puntos <= 4):
+            estrellas = 2
+            break;
+        case (puntos <= 6):
+            estrellas = 3
+            break;
+        case (puntos <= 8):
+            estrellas = 4
+            break;
+        case (puntos <= 10):
+            estrellas = 5
+            break;
+        case (puntos == 0):
+            estrellas = 0
+            break;
+    }
         };
         
     })
@@ -115,16 +139,40 @@ window.onload = function () {
 
                 <div class="uk-card-body">
                 <h3 class="uk-text-truncate">${pelicula.original_title} </h3>
-                        <img class="estrellas" src="img/estrellas_home/estrellas5.png" alt="">
+                        <img class="estrellas" src="img/estrellas_home/estrellas${estrellas}.png" alt="">
                     </div>
                 </div>
             
             </li>
             `
+            puntos = pelicula.vote_average
+            var estrellas
+    switch (true) {
+        case (puntos <= 2):
+            estrellas = 1
+            break;
+        case (puntos <= 4):
+            estrellas = 2
+            break;
+        case (puntos <= 6):
+            estrellas = 3
+            break;
+        case (puntos <= 8):
+            estrellas = 4
+            break;
+        case (puntos <= 10):
+            estrellas = 5
+            break;
+        case (puntos == 0):
+            estrellas = 0
+            break;
+    }
         };
         
     })
     .catch(function (error) {
         console.log(`el error fue ${error}`)
     })
+
+    
 }

@@ -4,7 +4,31 @@ var querystringobj=new URLSearchParams(location.search)
 var idElegido= querystringobj.get("id")
 var tipo = querystringobj.get("tipo")
 console.log("la peli elegida es: "+ idElegido)
-console.log()
+
+  // var favoritos = ['a','b','c']
+    //localStorage.setItem("favoritos",JSON.stringify(favoritos))
+    //var arrayFavoritos = JSON.parse(localStorage.getItem("favoritos"))
+
+   //var favoritos = []
+   // favoritos.push('verde')
+
+var addFavorite = document.querySelector('#addFavorite')
+    addFavorite.addEventListener("click", function () {
+        
+        alert('apretaste el boton de favoritos')
+        favoritos.pus[h('rojo'])
+
+        {
+            tipo:
+            id:
+        }
+
+        //1) get del array
+        //2) getitem ---> parse
+        //3)agregas
+        //4) guardas de nuevo en session el array modificado
+        
+    })
 
 if (tipo == "movie") {
 
@@ -13,14 +37,37 @@ if (tipo == "movie") {
         return response.json()
     })
     .then(function (Object) {
-        console.log(Object.title);
+        puntos = Object.vote_average
+        console.log(puntos)
+        var estrellas
+        switch (true) {
+            case (puntos <= 2):
+                estrellas = 1
+                break;
+            case (puntos <= 4):
+                estrellas = 2
+                break;
+            case (puntos <= 6):
+                estrellas = 3
+                break;
+            case (puntos <= 8):
+                estrellas = 4
+                break;
+            case (puntos <= 10):
+                estrellas = 5
+                break;
+            case (puntos == 0):
+                estrellas = 0
+                break;
+    }
+
         var titulojs= document.querySelector("#titulojs")
         titulojs.innerHTML+=
         `  <h1 id="titulomobile" >${Object.title}</h1>
         <div class="contenedor_poster">
            <div> <h1 id="titulotablet" >${Object.title}</h1> 
        
-       <img id="stars" src="img/estrellas_home/estrellas5.png" alt="rating">
+       <img id="stars" src="img/estrellas_home/estrellas${estrellas}.png" alt="rating">
        <h3>Release date:</h3>
         <p>${Object.release_date}</p>
         <h3>Duration:</h3>
@@ -33,15 +80,18 @@ if (tipo == "movie") {
                 <p>review</p>
                 </div>
        </div>
-    <img class="poster" src="${imgURL+Object.poster_path}" alt="Birds Of Prey">
+    <img class="poster" src="${imgURL+Object.poster_path}" alt="${Object.title}">
     </div >
        <div id="sinopsismobile">
         <h3>Synopsis:</h3>
         <p>After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.</p>
         </div>
         `
+        
+       
 
     })
+
     .catch(function (error) {
         console.log(`el error fue ${error}`)
     })
@@ -101,10 +151,7 @@ if (tipo == "movie") {
         <p>After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.</p>
         </div>
         `
-
-        
-
-    })
+    }) 
     .catch(function (error) {
         console.log(`el error fue ${error}`)
     })
@@ -127,6 +174,9 @@ if (tipo == "movie") {
     .catch(function (error) {
         console.log(`el error fue ${error}`)
     })
+
+
+    
     
 }
 
