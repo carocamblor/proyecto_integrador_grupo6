@@ -49,7 +49,7 @@ if (grupo == "movies") {
           pelisGenero.innerHTML += 
           `
           <article>
-          <a href="movies_detail.html?tipo=${element.media_type}&id=${element.id}"><img src="${imgURL}${element.poster_path}" alt=""></a>
+          <a href="movies_detail.html?tipo=movie&id=${element.id}"><img src="${imgURL}${element.poster_path}" alt=""></a>
         </article>
           `
       }
@@ -104,7 +104,7 @@ if (grupo == "movies") {
           pelisGenero.innerHTML += 
           `
           <article>
-          <a href="movies_detail.html?tipo=${element.media_type}&id=${element.id}"><img src="${imgURL}${element.poster_path}" alt=""></a>
+          <a href="movies_detail.html?tipo=tv&id=${element.id}"><img src="${imgURL}${element.poster_path}" alt=""></a>
         </article>
           `
       }
