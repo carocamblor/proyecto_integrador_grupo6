@@ -28,7 +28,10 @@ if (tipo == "movie") {
        <div id="sinopsistablet"><h3>Synopsis:</h3>
         <p>${Object.overview}</p>
     </div> 
-    <iframe src="https://www.youtube.com/embed/YjpsGw7YlU8"> Trailer</iframe>
+    <div class="episodio_desktop"> 
+                <h3>Review</h3>
+                <p>review</p>
+                </div>
        </div>
     <img class="poster" src="${imgURL+Object.poster_path}" alt="Birds Of Prey">
     </div >
@@ -71,6 +74,7 @@ if (tipo == "movie") {
     })
     .then(function (Object) {
         console.log(Object.title);
+        var review = "fetch"
         var titulojs= document.querySelector("#titulojs")
         titulojs.innerHTML+=
         `  <h1 id="titulomobile" >${Object.title}</h1>
@@ -85,7 +89,10 @@ if (tipo == "movie") {
        <div id="sinopsistablet"><h3>Synopsis:</h3>
         <p>${Object.overview}</p>
     </div> 
-    <iframe src="https://www.youtube.com/embed/YjpsGw7YlU8"> Trailer</iframe>
+    <div class="episodio_desktop"> 
+                <h3>Review</h3>
+                <p>review</p>
+            </div>
        </div>
     <img class="poster" src="${imgURL+Object.poster_path}" alt="Birds Of Prey">
     </div >
@@ -94,6 +101,8 @@ if (tipo == "movie") {
         <p>After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.</p>
         </div>
         `
+
+        
 
     })
     .catch(function (error) {
