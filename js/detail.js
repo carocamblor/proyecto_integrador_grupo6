@@ -11,7 +11,7 @@ console.log("la peli elegida es: "+ idElegido)
 
 
    //var favoritos = []
-   // favoritos.push('verde')
+   
 
 var addFavorite = document.querySelector('#addFavorite')
     addFavorite.addEventListener("click", function () {
@@ -19,9 +19,10 @@ var addFavorite = document.querySelector('#addFavorite')
         alert('apretaste el boton de favoritos')
         favoritos.push('rojo')
         localStorage.getItem("favoritos")
-        var arrayFavs = JSON.parse(localStorage.getItem("favoritos"))
+        //var arrayFavs = JSON.parse(localStorage.getItem("favoritos"))
         if (arrayFavs == null) {
-            
+            var arrayFavs = JSON.parse(localStorage.getItem("favoritos"))
+            favoritos.push('')
         } else {
             
         }
