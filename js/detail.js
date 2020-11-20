@@ -48,25 +48,14 @@ fetch(`https://api.themoviedb.org/3/movie/${pelielegida}?api_key=${apiKey}&langu
     })
     .then(function (Object) {
         console.log(Object);
+        if (Object.results.length === 0) {
+            console.log('no hay similares')
+        }
         var similares= document.querySelector("#similares")
         for (let i = 0; i < Object.results.length; i++) {
             const element = Object.results[i];
             similares.innerHTML+= `<div><a href="movies_detail.html?idmovie=${element.id}"><img src="${imgURL+element.poster_path}" alt=""></a></div>`
-        }
-        /* similares.innerHTML+=
-        
-           <div >
-                <div><a href="movies_detail.html"><img src="img/img_movie_detail/suicide_squad.jpg" alt=""></a></div>
-                <div><a href="movies_detail.html"><img src="img/img_movie_detail/superman.jpg" alt="superman"></a></div>
-                <div><a href="series_detail.html"><img src="img/img_movie_detail/arrow.jpg" alt="arrow"></a></div>
-                <div><a href="movies_detail.html"><img src="img/img_movie_detail/avengers_infinity_war.jpg" alt="avengers"></a></div>
-                <div><a href="movies_detail.html"><img src="img/img_movie_detail/spiderman3.jpg" alt="spiderman"></a></div>
-                <div><a href="movies_detail.html"><img src="img/img_movie_detail/transformers.jpg" alt="transformers"></a></div>
-                <div id="peliculastablet"><a href="movies_detail.html"></a><img src="img/img_movie_detail/terminator.jpg" alt="terminator"></a></div>
-                <div id="peliculastablet"><a href="movies_detail.html"></a><img src="img/img_movie_detail/resident evil.jpg" alt="residentevil"></a></div>
-            </div>*/
-        
-       
+        }      
 
     })
     .catch(function (error) {

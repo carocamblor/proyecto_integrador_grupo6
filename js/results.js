@@ -17,6 +17,11 @@ window.addEventListener('load', function(){
     })
     
     .then(function(data) { 
+      if (data.results.length === 0) {
+
+        console.log('no hay resultados')
+        
+      }
       for (let i = 0; i < data.results.length; i++) {
         const element = data.results[i];
         console.log(element)

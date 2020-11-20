@@ -53,7 +53,7 @@ window.onload = function () {
             <li>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-media-top">
-                        <img class="poster" src="${imgURL + pelicula.poster_path}" alt="${pelicula.original_title}">
+                    <a href="movies_detail.html?idmovie=${pelicula.id}"> <img class="poster" src="${imgURL + pelicula.poster_path}" alt="${pelicula.original_title}"></a>
                     </div>
                 <div class="uk-card-body">
                  <h3 class="uk-text-truncate">${pelicula.original_title} </h3>
@@ -88,7 +88,7 @@ window.onload = function () {
                 <div class="uk-card uk-card-default">
                     
                     <div class="uk-card-media-top">
-                        <img class="poster" src="${imgURL + pelicula.poster_path}" alt="${pelicula.original_title}">
+                    <a href="movies_detail.html?idmovie=${pelicula.id}"> <img class="poster" src="${imgURL + pelicula.poster_path}" alt="${pelicula.original_title}"></a>
                     </div>
 
                 <div class="uk-card-body">
