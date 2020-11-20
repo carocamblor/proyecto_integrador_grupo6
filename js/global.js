@@ -1,4 +1,6 @@
-// cuando le ponemos window onload a esto no funca
+
+
+window.addEventListener('load', function(){
     
 fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`)
         .then(function (response) {
@@ -41,4 +43,5 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=
         .catch(function (error) {
             console.log(`el error fue ${error}`)
         })
-        
+
+})
