@@ -6,8 +6,9 @@ var tipo = querystringobj.get("tipo")
 console.log("la peli elegida es: "+ idElegido)
 
   // var favoritos = ['a','b','c']
-    //localStorage.setItem("favoritos",JSON.stringify(favoritos))
-    //var arrayFavoritos = JSON.parse(localStorage.getItem("favoritos"))
+  
+ 
+
 
    //var favoritos = []
    // favoritos.push('verde')
@@ -16,11 +17,13 @@ var addFavorite = document.querySelector('#addFavorite')
     addFavorite.addEventListener("click", function () {
         
         alert('apretaste el boton de favoritos')
-        favoritos.pus[h('rojo'])
-
-        {
-            tipo:
-            id:
+        favoritos.push('rojo')
+        localStorage.getItem("favoritos")
+        var arrayFavs = JSON.parse(localStorage.getItem("favoritos"))
+        if (arrayFavs == null) {
+            
+        } else {
+            
         }
 
         //1) get del array
