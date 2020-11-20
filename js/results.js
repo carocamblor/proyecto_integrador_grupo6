@@ -28,7 +28,7 @@ window.addEventListener('load', function(){
           searchResults.innerHTML += 
           `
           <article>
-            <a href="movies_detail.html"><img src="${imgURL}${element.poster_path}" alt=""></a>
+          <a href="movies_detail.html?idmovie=${element.id}"><img src="${imgURL}${element.poster_path}" alt=""></a>
         </article>
           `
       }

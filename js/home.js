@@ -29,6 +29,22 @@ window.onload = function () {
             </li>
             `
             puntos = pelicula.vote_average
+            console.log(puntos)
+           
+            switch (puntos) {
+                case 5.9:
+                    estrellas = 1
+                    break;
+                case 7:
+                    estrellas = 2
+                    break;
+                case 8:
+                    estrellas = 3
+                    break;
+            
+                default:
+                    break;
+            }
         };
 
     })
