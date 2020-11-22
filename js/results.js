@@ -1,5 +1,9 @@
-window.addEventListener('load', function(){
-    
+window.addEventListener("loadstart", function(){
+  let spinnerWrapper = document.querySelector("#spinner");
+})
+
+window.addEventListener('unload', function(){
+    spinnerWrapper.style.display = "none";
     var searchResults = document.querySelector('.results')
     var queryString = location.search
     var queryStringObj = new URLSearchParams(queryString)
