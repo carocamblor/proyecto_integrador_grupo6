@@ -1,12 +1,13 @@
 window.addEventListener('load', function(){
     
     var preferidos = document.querySelector('.preferidos')
-    var favs = localStorage.getItem("favoritos");
+    //var favs = localStorage.getItem("favoritos");
+    var favs = JSON.parse(localStorage.getItem("favoritos"))
 
 
 
       for (let i = 0; i < favs.length; i++) {
-        const element = localStorage.getItem("favoritos")[i];
+        const element = favs[i];  
         console.log(element)
          
 
