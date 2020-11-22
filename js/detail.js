@@ -31,7 +31,7 @@ var addFavorite = document.querySelector('#addFavorite')
             tipo: tipo,
             id: idElegido
         });
-        arrayFavs.remove()
+       // arrayFavs.remove()
 
         //1) get del array
         //2) getitem ---> parse
