@@ -1,8 +1,7 @@
-window.addEventListener("loadstart", function(){
-  let spinnerWrapper = document.querySelector("#spinner");
-})
 
-window.addEventListener('unload', function(){
+
+window.addEventListener('load', function(){
+  let spinnerWrapper = document.querySelector("#spinner")
     spinnerWrapper.style.display = "none";
     var searchResults = document.querySelector('.results')
     var queryString = location.search
