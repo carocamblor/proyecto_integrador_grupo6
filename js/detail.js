@@ -35,6 +35,12 @@ var addFavorite = document.querySelector('#addFavorite')
         //4) guardas de nuevo en session el array modificado
         localStorage.setItem("favoritos", JSON.stringify(arrayFavs))
     })
+/*
+var share = document.querySelector('#share')
+    share.addEventListener("click", function () {
+        alert(apretaste share)
+    })
+*/
 
 if (tipo == "movie") {
 
