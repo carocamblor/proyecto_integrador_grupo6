@@ -54,6 +54,7 @@ footer {
     height: auto;
     padding: 5vh;
     margin-top: 4vh;
+    text-align: center;
 }
 
 #redes {
@@ -102,6 +103,10 @@ footer h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.logo_tmdb{
+    padding: 20px;
 }
 
 

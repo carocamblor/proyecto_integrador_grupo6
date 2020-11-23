@@ -2,6 +2,7 @@ window.onload = function () {
 var querystringobj=new URLSearchParams(location.search)
 var generoElegido = querystringobj.get("idgenre")
 var grupo = querystringobj.get("group")
+var nombreGenero = querystringobj.get("genrename")
 console.log("el genero elegido es: "+ generoElegido)
 
 var h1genero = document.querySelector('.h1genero')
@@ -29,7 +30,7 @@ if (grupo == "movies") {
     
     })
 
-    h1genero.innerHTML += `${generoElegido} Movies`
+    h1genero.innerHTML += `${nombreGenero} Movies`
 
     fetch(`https://api.themoviedb.org/3/discover/movie?api_key=e57721559c7ea59e5e81582798c16c18&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${generoElegido}`)
 
@@ -84,7 +85,7 @@ if (grupo == "movies") {
     
     })
 
-    h1genero.innerHTML += `${generoElegido} Seires`
+    h1genero.innerHTML += `${nombreGenero} Seires`
 
     fetch(`https://api.themoviedb.org/3/discover/tv?api_key=e57721559c7ea59e5e81582798c16c18&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=${generoElegido}&include_null_first_air_dates=false`)
 

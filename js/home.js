@@ -1,4 +1,21 @@
 window.onload = function () {
+
+    function rating(puntos) {
+        if (puntos <= 2){
+            return 1
+        } else if (puntos <=4) {
+            return 2
+        }  else if (puntos <= 6) {
+            return 3
+        }  else if (puntos <= 8) {
+            return 4
+        } else if (puntos <= 10) {
+            return 5
+        } else {
+           // poner alert de error
+        }
+        
+    }
     
     fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=1`)
     .then(function (response) {
@@ -10,21 +27,7 @@ window.onload = function () {
         for (let i = 0; i < data.results.length; i++) {
             var pelicula = data.results[i];
 
-            puntos = pelicula.vote_average
-            var estrellas
-            if (puntos <= 2){
-                estrellas = 1
-            } else if (puntos <=4) {
-                estrellas = 2
-            }  else if (puntos <= 6) {
-                estrellas = 3
-            }  else if (puntos <= 8) {
-                estrellas = 4
-            } else if (puntos <= 10) {
-                estrellas = 5
-            } else {
-               // poner alert de error
-            }
+            var estrellas = rating(pelicula.vote_average);
             
             var contenedorImagen = document.querySelector('#popular');
 
@@ -41,11 +44,7 @@ window.onload = function () {
                     </div>
                 </div>
             </li>
-            `
-            
-            
-               
-           
+            `   
         };
 
     })
@@ -63,6 +62,7 @@ window.onload = function () {
         for (let i = 0; i < data.results.length; i++) {
             var pelicula = data.results[i];
             
+            var estrellas = rating(pelicula.vote_average);
 
             var contenedorImagen = document.querySelector('#top');
 
@@ -80,28 +80,7 @@ window.onload = function () {
                 </div>
             </li>
             `
-            puntos = pelicula.vote_average
-            var estrellas
-    switch (true) {
-        case (puntos <= 2):
-            estrellas = 1
-            break;
-        case (puntos <= 4):
-            estrellas = 2
-            break;
-        case (puntos <= 6):
-            estrellas = 3
-            break;
-        case (puntos <= 8):
-            estrellas = 4
-            break;
-        case (puntos <= 10):
-            estrellas = 5
-            break;
-        case (puntos == 0):
-            estrellas = 0
-            break;
-    }
+            
         };
         
     })
@@ -118,6 +97,8 @@ window.onload = function () {
 
         for (let i = 0; i < data.results.length; i++) {
             var pelicula = data.results[i];
+
+            var estrellas = rating(pelicula.vote_average);
 
             var contenedorImagen = document.querySelector('#upcoming');
 
@@ -139,28 +120,6 @@ window.onload = function () {
             
             </li>
             `
-            puntos = pelicula.vote_average
-            var estrellas
-    switch (true) {
-        case (puntos <= 2):
-            estrellas = 1
-            break;
-        case (puntos <= 4):
-            estrellas = 2
-            break;
-        case (puntos <= 6):
-            estrellas = 3
-            break;
-        case (puntos <= 8):
-            estrellas = 4
-            break;
-        case (puntos <= 10):
-            estrellas = 5
-            break;
-        case (puntos == 0):
-            estrellas = 0
-            break;
-    }
         };
         
     })

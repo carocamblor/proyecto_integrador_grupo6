@@ -4,21 +4,17 @@ var querystringobj=new URLSearchParams(location.search)
 var idElegido= querystringobj.get("id")
 var tipo = querystringobj.get("tipo")
 console.log("la peli elegida es: "+ idElegido)
-
-  // var favoritos = ['a','b','c']
-  
- 
-
-
-   //var favoritos = []
    
-
+var removeFavorite = document.querySelector('#removeFavorite')
 var addFavorite = document.querySelector('#addFavorite')
     addFavorite.addEventListener("click", function () {
         
         console.log('apretaste el boton de favoritos');
         var favs = localStorage.getItem("favoritos");
- 
+
+        removeFavorite.style.display = 'block';
+        addFavorite.style.display = 'none';
+
         var arrayFavs;
         if (favs == null) {
                 arrayFavs = [];    
@@ -115,7 +111,7 @@ if (tipo == "movie") {
             console.log('no hay similares')
         }
         var similares= document.querySelector("#similares")
-        for (let i = 0; i < Object.results.length; i++) {
+        for (let i = 0; i < 9; i++) {
             const element = Object.results[i];
             similares.innerHTML+= `<div><a href="movies_detail.html?tipo=movie&id=${element.id}"><img src="${imgURL+element.poster_path}" alt=""></a></div>`
         }      
@@ -175,7 +171,7 @@ if (tipo == "movie") {
             console.log('no hay similares')
         }
         var similares= document.querySelector("#similares")
-        for (let i = 0; i < Object.results.length; i++) {
+        for (let i = 0; i < 9; i++) {
             const element = Object.results[i];
             similares.innerHTML+= `<div><a href="movies_detail.html?tipo=tv&id=${element.id}"><img src="${imgURL+element.poster_path}" alt=""></a></div>`
         }      

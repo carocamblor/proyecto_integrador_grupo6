@@ -1,5 +1,3 @@
-
-
 window.addEventListener('load', function(){
     
 fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=en-US`)
@@ -13,7 +11,7 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=
                 var GENERO = data.genres[i];
                 var menusgenerospelis = document.querySelector("#menugenerospelis")
                 menusgenerospelis.innerHTML+=
-                `<li><a href="genres.html?group=movies&idgenre=${GENERO.id}">${GENERO.name}</a></li>
+                `<li><a href="genres.html?group=movies&idgenre=${GENERO.id}&genrename=${GENERO.name}">${GENERO.name}</a></li>
                 `
                 console.log(GENERO)
             };
@@ -34,7 +32,7 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=
                 var GENERO = data.genres[i];
                 var menusgenerosseries = document.querySelector("#menugenerosseries")
                 menusgenerosseries.innerHTML+=
-                `<li><a href="genres.html?group=tv&idgenre=${GENERO.id}">${GENERO.name}</a></li>
+                `<li><a href="genres.html?group=tv&idgenre=${GENERO.id}&genrename=${GENERO.name}">${GENERO.name}</a></li>
                 `
                 console.log(GENERO)
             };
