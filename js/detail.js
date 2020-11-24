@@ -7,14 +7,29 @@ console.log("la peli elegida es: "+ idElegido)
    
 var removeFavorite = document.querySelector('#removeFavorite')
 var addFavorite = document.querySelector('#addFavorite')
+var predilectos = JSON.parse(localStorage.getItem("favoritos"));
+for (let index = 0; index < predilectos.length; index++) {
+    const element = predilectos[index];
+    if (predilectos.some(peli=>peli.id===idElegido)) {
+        removeFavorite.style.display = 'block';
+        addFavorite.style.display = 'none';
+     
+            
+        } else{
+        removeFavorite.style.display = 'none';
+        addFavorite.style.display = 'block';
+
+        }
+    
+}
     addFavorite.addEventListener("click", function () {
         
         console.log('apretaste el boton de favoritos');
-        var favs = localStorage.getItem("favoritos");
+
 
         removeFavorite.style.display = 'block';
         addFavorite.style.display = 'none';
-
+        var favs = JSON.parse(localStorage.getItem("favoritos"))
         var arrayFavs;
         if (favs == null) {
                 arrayFavs = [];    
@@ -27,6 +42,8 @@ var addFavorite = document.querySelector('#addFavorite')
             tipo: tipo,
             id: idElegido
         });
+
+        
        // arrayFavs.remove()
 
         //1) get del array

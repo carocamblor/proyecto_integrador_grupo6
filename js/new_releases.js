@@ -21,7 +21,7 @@ window.addEventListener('load', function(){
                 preferidos.innerHTML += 
                 `
                 <article>
-                <a href="movies_detail.html?tipo=${Object.media_type}&id=${Object.id}"><img src="${imgURL}${Object.poster_path}" alt=""></a>
+                <a href="movies_detail.html?tipo=movie&id=${Object.id}"><img src="${imgURL}${Object.poster_path}" alt=""></a>
               </article>
                 `
             })
@@ -41,7 +41,7 @@ window.addEventListener('load', function(){
                 preferidos.innerHTML += 
                 `
                 <article>
-                <a href="movies_detail.html?tipo=${Object.media_type}&id=${Object.id}"><img src="${imgURL}${Object.poster_path}" alt=""></a>
+                <a href="movies_detail.html?tipo=tv&id=${Object.id}"><img src="${imgURL}${Object.poster_path}" alt=""></a>
               </article>
                 `
             })
