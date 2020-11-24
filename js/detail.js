@@ -156,9 +156,9 @@ if (tipo == "movie") {
         var review = "fetch"
         var titulojs= document.querySelector("#titulojs")
         titulojs.innerHTML+=
-        `  <h1 id="titulomobile" >${Object.title}</h1>
+        `  <h1 id="titulomobile" >${Object.name}</h1>
         <div class="contenedor_poster">
-           <div> <h1 id="titulotablet" >${Object.title}</h1> 
+           <div> <h1 id="titulotablet" >${Object.name}</h1> 
        
        <img id="stars" src="img/estrellas_home/estrellas5.png" alt="rating">
        <h3>First aired:</h3>
