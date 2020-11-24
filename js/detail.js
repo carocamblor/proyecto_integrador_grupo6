@@ -181,7 +181,7 @@ if (tipo == "movie") {
     </div> 
     <div class="episodio_desktop"> 
                 <h3>Review</h3>
-                <p>review</p>
+                
             </div>
        </div>
     <img class="poster" src="${imgURL+Object.poster_path}" alt="${Object.name}">
@@ -191,7 +191,30 @@ if (tipo == "movie") {
         <p>After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.</p>
         </div>
         `
+        
+        //REVIEWS PARA SERIES
+        var review = document.querySelector('.episodio_desktop')
 
+        fetch(`https://api.themoviedb.org/3/tv/${Object.id}/reviews?api_key=e57721559c7ea59e5e81582798c16c18&language=en-US&page=1`)
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (data) {
+            
+            for (let i = 0; i < data.results.length; i++) {
+                const element = data.results[i];
+                review.innerHTML += `
+            <p>${element.content}</p>
+            <p>- ${element.author}</p>
+            `
+            }
+            
+        })
+        .catch(function (error) {
+            console.log(`el error fue ${error}`)
+        })
+
+        //LISTA GENEROS
         var pGeneros = document.querySelector('#genresDetail')
         for (let i = 0; i < Object.genres.length; i++) {
             const element = Object.genres[i];
@@ -204,6 +227,7 @@ if (tipo == "movie") {
     .catch(function (error) {
         console.log(`el error fue ${error}`)
     })
+    //SIMILARES SERIES
     fetch(`https://api.themoviedb.org/3/tv/${idElegido}/similar?api_key=${apiKey}&language=en-US&page=1`)
     .then(function (response) {
         return response.json()
