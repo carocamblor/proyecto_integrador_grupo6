@@ -184,7 +184,7 @@ if (tipo == "movie") {
                 <p>review</p>
             </div>
        </div>
-    <img class="poster" src="${imgURL+Object.poster_path}" alt="Birds Of Prey">
+    <img class="poster" src="${imgURL+Object.poster_path}" alt="${Object.name}">
     </div >
        <div id="sinopsismobile">
         <h3>Synopsis:</h3>

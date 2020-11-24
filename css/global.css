@@ -287,8 +287,8 @@ input {
 {
     /*para el footer*/
 
-    footer {
-        display: none;
+    .logo_tmdb{
+        padding: 0px;
     }
   
     #redes {
