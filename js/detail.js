@@ -101,6 +101,8 @@ if (tipo == "movie") {
         <p>${Object.release_date}</p>
         <h3>Duration:</h3>
         <p>${Object.runtime} min</p>
+        <h3>Genres:</h3>
+        <ul id="genresDetail"></ul>
        <div id="sinopsistablet"><h3>Synopsis:</h3>
         <p>${Object.overview}</p>
     </div> 
@@ -117,7 +119,14 @@ if (tipo == "movie") {
         </div>
         `
         
-       
+        var pGeneros = document.querySelector('#genresDetail')
+       for (let i = 0; i < Object.genres.length; i++) {
+           const element = Object.genres[i];
+                pGeneros.innerHTML += `
+                <li><a href="genres.html?group=movies&idgenre=${element.id}&genrename=${element.name}">${element.name}</a></li>
+                `
+           
+       }
 
     })
 
@@ -165,6 +174,8 @@ if (tipo == "movie") {
         <p>${Object.first_air_date}</p>
         <h3>Numer of episodes:</h3>
         <p>${Object.number_of_episodes} espisodes</p>
+        <h3>Genres:</h3>
+        <ul id="genresDetail"></ul>
        <div id="sinopsistablet"><h3>Synopsis:</h3>
         <p>${Object.overview}</p>
     </div> 
@@ -180,6 +191,15 @@ if (tipo == "movie") {
         <p>After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.</p>
         </div>
         `
+
+        var pGeneros = document.querySelector('#genresDetail')
+        for (let i = 0; i < Object.genres.length; i++) {
+            const element = Object.genres[i];
+                 pGeneros.innerHTML += `
+                 <li><a href="genres.html?group=tv&idgenre=${element.id}&genrename=${element.name}">${element.name}</a></li>
+                 `
+            
+        }
     }) 
     .catch(function (error) {
         console.log(`el error fue ${error}`)
