@@ -162,14 +162,36 @@ if (tipo == "movie") {
     })
     .then(function (Object) {
         console.log(Object.title);
-        var review = "fetch"
+        puntos = Object.vote_average
+        console.log(puntos)
+        var estrellas
+        switch (true) {
+            case (puntos <= 2):
+                estrellas = 1
+                break;
+            case (puntos <= 4):
+                estrellas = 2
+                break;
+            case (puntos <= 6):
+                estrellas = 3
+                break;
+            case (puntos <= 8):
+                estrellas = 4
+                break;
+            case (puntos <= 10):
+                estrellas = 5
+                break;
+            case (puntos == 0):
+                estrellas = 0
+                break;
+    }
         var titulojs= document.querySelector("#titulojs")
         titulojs.innerHTML+=
         `  <h1 id="titulomobile" >${Object.name}</h1>
         <div class="contenedor_poster">
            <div> <h1 id="titulotablet" >${Object.name}</h1> 
        
-       <img id="stars" src="img/estrellas_home/estrellas5.png" alt="rating">
+       <img id="stars" src="img/estrellas_home/estrellas${estrellas}.png" alt="rating">
        <h3>First aired:</h3>
         <p>${Object.first_air_date}</p>
         <h3>Numer of episodes:</h3>

@@ -27,12 +27,12 @@ ul{
     list-style: none;
     padding: 0;
 }
-li a{
+ul#genresDetail li a{
     font-family: georgia;
     font-size: 16px;
     color: white;
 }
-li a:hover{
+ul#genresDetail li a:hover{
     color: #0adae9;
     font-weight: bold;
 
@@ -168,7 +168,7 @@ h1{
 p{
     font-size: larger;
 }
-li a{
+ul#genresDetail li a{
     font-size: larger;
 
 }
