@@ -1,9 +1,16 @@
 window.addEventListener('load', function(){
     
     var preferidos = document.querySelector('.preferidos')
+    var noFavs = document.querySelector('#noFavs')
     //var favs = localStorage.getItem("favoritos");
     var favs = JSON.parse(localStorage.getItem("favoritos"))
 
+        if (favs == null || favs.length==0) {
+          noFavs.style.display = 'block'  
+        
+        } else {
+           // favs = JSON.parse(localStorage.getItem("favoritos"))
+           noFavs.style.display = 'none' 
 
 
       for (let i = 0; i < favs.length; i++) {
@@ -53,5 +60,6 @@ window.addEventListener('load', function(){
         }
         
       }
+    }
       
     })

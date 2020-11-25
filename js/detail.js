@@ -4,11 +4,20 @@ var querystringobj=new URLSearchParams(location.search)
 var idElegido= querystringobj.get("id")
 var tipo = querystringobj.get("tipo")
 console.log("la peli elegida es: "+ idElegido)
+
+var favs = JSON.parse(localStorage.getItem("favoritos"))
    
 var removeFavorite = document.querySelector('#removeFavorite')
 var addFavorite = document.querySelector('#addFavorite')
 
-var predilectos = JSON.parse(localStorage.getItem("favoritos"));
+var predilectos;
+        if (favs == null) {
+                predilectos = [];    
+        
+        } else {
+            predilectos = JSON.parse(localStorage.getItem("favoritos"))
+        }
+
 for (let index = 0; index < predilectos.length; index++) {
     const element = predilectos[index];
     if (predilectos.some(peli=>peli.id===idElegido)) {
@@ -23,7 +32,31 @@ for (let index = 0; index < predilectos.length; index++) {
         }
     
 }
-var favs = JSON.parse(localStorage.getItem("favoritos"))
+var arrayFavs;
+        if (favs == null) {
+                arrayFavs = [];    
+        
+        } else {
+            arrayFavs = JSON.parse(localStorage.getItem("favoritos"))
+        }
+addFavorite.addEventListener("click", function () {
+        
+        console.log('apretaste el boton de favoritos');
+
+        removeFavorite.style.display = 'block';
+        addFavorite.style.display = 'none';
+       
+        
+
+        arrayFavs.push({
+            tipo: tipo,
+            id: idElegido
+        });
+
+        localStorage.setItem("favoritos", JSON.stringify(arrayFavs))
+})
+
+
 
 removeFavorite.addEventListener('click', function (){
     removeFavorite.style.display = 'none';
@@ -39,31 +72,6 @@ removeFavorite.addEventListener('click', function (){
         
     }
 })
-
-addFavorite.addEventListener("click", function () {
-        
-        console.log('apretaste el boton de favoritos');
-
-        removeFavorite.style.display = 'block';
-        addFavorite.style.display = 'none';
-       
-        var arrayFavs;
-        if (favs == null) {
-                arrayFavs = [];    
-        
-        } else {
-            arrayFavs = JSON.parse(localStorage.getItem("favoritos"))
-        }
-
-        arrayFavs.push({
-            tipo: tipo,
-            id: idElegido
-        });
-
-        localStorage.setItem("favoritos", JSON.stringify(arrayFavs))
-})
-
-
 /*
 var share = document.querySelector('#share')
     share.addEventListener("click", function () {

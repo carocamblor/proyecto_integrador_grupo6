@@ -6,6 +6,13 @@ div#spinner img{
     height: 100px;
 }
 
+#noFavs{
+    padding-left: 20px;
+    font-size: large;
+    font-family: georgia;
+    color: white;
+}
+
 
 section{
     display: grid;
