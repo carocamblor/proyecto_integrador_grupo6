@@ -22,6 +22,22 @@ h3{
     font-family: georgia;
 }
 
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+li a{
+    font-family: georgia;
+    font-size: 16px;
+    color: white;
+}
+li a:hover{
+    color: #0adae9;
+    font-weight: bold;
+
+}
+
 /*una columna con 3 o 4 cajas adentro*/
 article.pelicula {
     display: grid;
@@ -49,6 +65,7 @@ div.contenedor_poster {
 
 img.poster {
     width: 100%;
+    height: auto;
     
 
 }
@@ -95,6 +112,7 @@ img.poster {
     background: #303030;
     border-radius: 5px;
     margin-bottom: 0.8vh;
+    height: fit-content;
 }
 
 div.titulos_similares{
@@ -149,6 +167,10 @@ h1{
 }
 p{
     font-size: larger;
+}
+li a{
+    font-size: larger;
+
 }
 
 .episodio_mobile img{
@@ -208,9 +230,7 @@ div.titulos_similares{
     div.contenedor_poster {
         grid-template-columns: 59% 40%;
     }
-    img.poster{
-        height: 100%;
-    }
+    
     #stars {
         width: 40%;
         height: auto;
@@ -246,7 +266,7 @@ div.titulos_similares{
     div.contenedor_titulos_similares{
         width: 100%;
         margin: 0;
-        height: 100%;
+        
     }
 
     .titulos_similares img {
@@ -274,7 +294,7 @@ div.titulos_similares{
     }
     .columna_acciones_y_similares_desktop{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 7px;
     }
 

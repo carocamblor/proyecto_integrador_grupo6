@@ -179,13 +179,14 @@ if (tipo == "movie") {
        <div id="sinopsistablet"><h3>Synopsis:</h3>
         <p>${Object.overview}</p>
     </div> 
-    <div class="episodio_desktop"> 
-                <h3>Review</h3>
-                
-            </div>
+    
        </div>
     <img class="poster" src="${imgURL+Object.poster_path}" alt="${Object.name}">
     </div >
+    <div class="episodio_desktop"> 
+    <h3>Review</h3>
+    
+</div>
        <div id="sinopsismobile">
         <h3>Synopsis:</h3>
         <p>After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.</p>
@@ -201,13 +202,11 @@ if (tipo == "movie") {
         })
         .then(function (data) {
             
-            for (let i = 0; i < data.results.length; i++) {
-                const element = data.results[i];
+            
                 review.innerHTML += `
-            <p>${element.content}</p>
-            <p>- ${element.author}</p>
+            <p>${data.results[0].content}</p>
+            <p>- ${data.results[0].author}</p>
             `
-            }
             
         })
         .catch(function (error) {
