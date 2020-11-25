@@ -7,6 +7,7 @@ console.log("la peli elegida es: "+ idElegido)
    
 var removeFavorite = document.querySelector('#removeFavorite')
 var addFavorite = document.querySelector('#addFavorite')
+
 var predilectos = JSON.parse(localStorage.getItem("favoritos"));
 for (let index = 0; index < predilectos.length; index++) {
     const element = predilectos[index];
@@ -22,6 +23,22 @@ for (let index = 0; index < predilectos.length; index++) {
         }
     
 }
+var favs = JSON.parse(localStorage.getItem("favoritos"))
+
+removeFavorite.addEventListener('click', function (){
+    removeFavorite.style.display = 'none';
+    addFavorite.style.display = 'block';
+    for (let i = 0; i < favs.length; i++) {
+        const element = favs[i];
+        if ((element.id == idElegido)&&(element.tipo == tipo)){
+            alert('asjdask')
+            console.log(`esta es la que hay que borrar ${element.id} con tipo ${element.tipo}`)
+            favs.splice(i,1);
+            localStorage.setItem("favoritos", JSON.stringify(favs))
+        }
+        
+    }
+})
 
 addFavorite.addEventListener("click", function () {
         
@@ -46,21 +63,7 @@ addFavorite.addEventListener("click", function () {
         localStorage.setItem("favoritos", JSON.stringify(arrayFavs))
 })
 
-var favs = JSON.parse(localStorage.getItem("favoritos"))
 
-removeFavorite.addEventListener('click', function (){
-    removeFavorite.style.display = 'none';
-    addFavorite.style.display = 'block';
-    for (let i = 0; i < favs.length; i++) {
-        const element = favs[i];
-        if ((element.id == idElegido)&&(element.tipo == tipo)){
-            console.log(`esta es la que hay que borrar ${element.id} con tipo ${element.tipo}`)
-            favs.splice(i,1);
-            localStorage.setItem("favoritos", JSON.stringify(favs))
-        }
-        
-    }
-})
 /*
 var share = document.querySelector('#share')
     share.addEventListener("click", function () {
