@@ -34,7 +34,6 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=
                 menusgenerosseries.innerHTML+=
                 `<li><a href="genres.html?group=tv&idgenre=${GENERO.id}&genrename=${GENERO.name}">${GENERO.name}</a></li>
                 `
-                console.log(GENERO)
             };
     
         })
