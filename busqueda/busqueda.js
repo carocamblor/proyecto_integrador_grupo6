@@ -56,9 +56,12 @@ window.onload = function () {
         generosMovies.style.display = 'none'
       })
 
-      var busquedaGenerosMovies = []
+      
       generosMovies.addEventListener('submit', function(event){
         event.preventDefault()
+        var busquedaGenerosMovies = []
+        busquedaGenerosMovies.length = 0
+        resultados.innerHTML = ''
         var arrayGenerosMovies = Array.from(generosMovies.elements)
         console.log(arrayGenerosMovies)
         for (let i = 0; i < arrayGenerosMovies.length; i++) {
