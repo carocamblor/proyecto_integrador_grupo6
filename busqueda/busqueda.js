@@ -1,5 +1,7 @@
 window.onload = function () {
 
+  var resultados = document.querySelector('#results')
+
   var botonMovies = document.querySelector('#botonMovies')
   var botonSeries = document.querySelector('#botonSeries')
   var generosMovies = document.querySelector('#generosMovies')
@@ -68,6 +70,25 @@ window.onload = function () {
         console.log(busquedaGenerosMovies)
         var generosParaBuscarMovies = busquedaGenerosMovies.toString()
         console.log(generosParaBuscarMovies)
+
+        //fetch
+        fetch(`https://api.themoviedb.org/3/discover/movie?api_key=e57721559c7ea59e5e81582798c16c18&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${generosParaBuscarMovies}`)
+        .then(function(response) {
+          return response.json()
+        })
+        .then(function(data) {
+          for (let i = 0; i < data.results.length; i++) {
+            const element = data.results[i];
+            resultados.innerHTML +=`
+            <h5>${element.title}</h5>
+            <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" alt="">
+            `
+          }
+        })
+        .catch(function(error) {
+          console.log("Error: " + error);
+        })
+
       })
 
 }
