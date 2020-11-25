@@ -61,6 +61,7 @@ addFavorite.addEventListener("click", function () {
 removeFavorite.addEventListener('click', function (){
     removeFavorite.style.display = 'none';
     addFavorite.style.display = 'block';
+    var favs = JSON.parse(localStorage.getItem("favoritos"))
     for (let i = 0; i < favs.length; i++) {
         const element = favs[i];
         if ((element.id == idElegido)&&(element.tipo == tipo)){
