@@ -22,14 +22,14 @@ for (let index = 0; index < predilectos.length; index++) {
         }
     
 }
-    addFavorite.addEventListener("click", function () {
+
+addFavorite.addEventListener("click", function () {
         
         console.log('apretaste el boton de favoritos');
 
-
         removeFavorite.style.display = 'block';
         addFavorite.style.display = 'none';
-        var favs = JSON.parse(localStorage.getItem("favoritos"))
+       
         var arrayFavs;
         if (favs == null) {
                 arrayFavs = [];    
@@ -43,15 +43,24 @@ for (let index = 0; index < predilectos.length; index++) {
             id: idElegido
         });
 
-        
-       // arrayFavs.remove()
-
-        //1) get del array
-        //2) getitem ---> parse
-        //3)agregas
-        //4) guardas de nuevo en session el array modificado
         localStorage.setItem("favoritos", JSON.stringify(arrayFavs))
-    })
+})
+
+var favs = JSON.parse(localStorage.getItem("favoritos"))
+
+removeFavorite.addEventListener('click', function (){
+    removeFavorite.style.display = 'none';
+    addFavorite.style.display = 'block';
+    for (let i = 0; i < favs.length; i++) {
+        const element = favs[i];
+        if ((element.id == idElegido)&&(element.tipo == tipo)){
+            console.log(`esta es la que hay que borrar ${element.id} con tipo ${element.tipo}`)
+            favs.splice(i,1);
+            localStorage.setItem("favoritos", JSON.stringify(favs))
+        }
+        
+    }
+})
 /*
 var share = document.querySelector('#share')
     share.addEventListener("click", function () {
