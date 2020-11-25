@@ -59,7 +59,7 @@ div.contenedor_poster {
     width: 100%;
     margin: 0;
     display: grid;
-    grid-template-columns: 55% 40%;
+    grid-template-columns: 50% 50%;
     justify-content: space-between;
 }
 
@@ -129,7 +129,7 @@ div.titulos_similares{
 
 .columna_acciones_y_similares_desktop{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 /*para que no se vea en mobile*/
@@ -185,10 +185,6 @@ div.titulos_similares{
     height: 260px;
 }
 
-#sinopsistablet{
-    display:block;
-}
-
 #titulotablet{
     display:block;
 }
@@ -198,10 +194,6 @@ div.titulos_similares{
 }
 
 .acciones_usuario_mobile {
-    display: none;
-}
-
-#sinopsismobile{
     display: none;
 }
 
@@ -234,6 +226,13 @@ div.titulos_similares{
     #stars {
         width: 40%;
         height: auto;
+    }
+
+    #sinopsistablet{
+        display:block;
+    }
+    #sinopsismobile{
+        display: none;
     }
 
     /*solo para series detail*/
@@ -295,6 +294,7 @@ div.titulos_similares{
     .columna_acciones_y_similares_desktop{
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         gap: 7px;
     }
 

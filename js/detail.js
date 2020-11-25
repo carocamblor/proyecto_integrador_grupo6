@@ -106,19 +106,47 @@ if (tipo == "movie") {
        <div id="sinopsistablet"><h3>Synopsis:</h3>
         <p>${Object.overview}</p>
     </div> 
-    <div class="episodio_desktop"> 
-                <h3>Review</h3>
-                <p>review</p>
-                </div>
        </div>
     <img class="poster" src="${imgURL+Object.poster_path}" alt="${Object.title}">
     </div >
+    <div class="episodio_desktop"> 
+    <h3>Review</h3>
+        </div>
        <div id="sinopsismobile">
         <h3>Synopsis:</h3>
-        <p>After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.</p>
+        <p>${Object.overview}</p>
         </div>
         `
-        
+
+        //REVIEWS PELIS
+         var review = document.querySelector('.episodio_desktop')
+
+         fetch(`https://api.themoviedb.org/3/movie/${Object.id}/reviews?api_key=e57721559c7ea59e5e81582798c16c18&language=en-US&page=1`)
+         .then(function (response) {
+             return response.json()
+         })
+         .then(function (data) {
+             
+            if (data.results.length==0) {
+                console.log('no hay reviews')
+                review.innerHTML += `
+                <p>  No review yet. </p>
+             ` 
+            } else {
+                review.innerHTML += `
+                 
+             <p>${data.results[0].content}</p>
+             <p>- ${data.results[0].author}</p>
+             ` 
+            }
+             
+                 
+             
+         })
+         .catch(function (error) {
+             console.log(`el error fue ${error}`)
+         })
+        //LISTA GENEROS PELIS
         var pGeneros = document.querySelector('#genresDetail')
        for (let i = 0; i < Object.genres.length; i++) {
            const element = Object.genres[i];
@@ -138,9 +166,9 @@ if (tipo == "movie") {
         return response.json()
     })
     .then(function (Object) {
-        console.log(Object);
+        var contenedorSimilares= document.querySelector(".contenedor_titulos_similares")
         if (Object.results.length === 0) {
-            console.log('no hay similares')
+            contenedorSimilares.innerHTML+= `<p>Sorry! No similar titles available.</p>`
         }
         var similares= document.querySelector("#similares")
         for (let i = 0; i < 9; i++) {
@@ -206,12 +234,11 @@ if (tipo == "movie") {
     <img class="poster" src="${imgURL+Object.poster_path}" alt="${Object.name}">
     </div >
     <div class="episodio_desktop"> 
-    <h3>Review</h3>
-    
-</div>
+        <h3>Review</h3>
+        </div>
        <div id="sinopsismobile">
         <h3>Synopsis:</h3>
-        <p>After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to save a young girl from an evil crime lord.</p>
+        <p>${Object.overview}</p>
         </div>
         `
         
@@ -225,10 +252,17 @@ if (tipo == "movie") {
         .then(function (data) {
             
             
+            if (data.results.length==0) {
                 review.innerHTML += `
-            <p>${data.results[0].content}</p>
-            <p>- ${data.results[0].author}</p>
-            `
+                <p>  No review yet. </p>
+             ` 
+            } else {
+                review.innerHTML += `
+                 
+             <p>${data.results[0].content}</p>
+             <p>- ${data.results[0].author}</p>
+             ` 
+            }
             
         })
         .catch(function (error) {
@@ -255,10 +289,12 @@ if (tipo == "movie") {
     })
     .then(function (Object) {
         console.log(Object);
+        var similares= document.querySelector("#similares")
         if (Object.results.length === 0) {
             console.log('no hay similares')
+            similares.innerHTML+= `<p>Sorry! No similar titles available.</p>`
         }
-        var similares= document.querySelector("#similares")
+        
         for (let i = 0; i < 9; i++) {
             const element = Object.results[i];
             similares.innerHTML+= `<div><a href="movies_detail.html?tipo=tv&id=${element.id}"><img src="${imgURL+element.poster_path}" alt=""></a></div>`
