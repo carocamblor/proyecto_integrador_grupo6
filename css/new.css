@@ -13,6 +13,23 @@ div#spinner img{
     color: white;
 }
 
+#buscadorAvanzado{
+    display: none;
+}
+
+#h1Yboton{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#contenedorBotonAdv{
+    padding-right: 11%;
+    display: flex;
+    justify-content: flex-end;
+}
 
 section{
     display: grid;

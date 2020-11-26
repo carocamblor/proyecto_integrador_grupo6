@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
     
     <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/busqueda.css">
     <link rel="stylesheet" href="css/global.css">
     <script src="js/atajos.js"></script>
     <script src="js/results.js"></script>
@@ -67,7 +68,41 @@
     <!--<iframe src="https://giphy.com/embed/eHS6YMOOc6v7LZgHry" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>-->
     <img src="img/wolf_loading.gif" alt="loading">  
 </div>
+    <div id="h1Yboton">
     <h1 id="h1results"></h1>
+    <div id="contenedorBotonAdv">
+    <button id="AdvSearch">Advanced Search</button>
+    </div>
+    </div>
+
+    <div id="buscadorAvanzado">
+    
+        <h3>What would you like to search for?</h3>
+    
+        <p> 
+            <button id="botonMovies">Movies</button> 
+            <button id="botonSeries">Series</button>
+        </p>
+        
+        <form action="results.html" method="GET" id="generosMovies">
+            <h4 id="h4Movie">Enter Keywords:</h4>
+            <div class="inputDiv"><input id="keywordsMovies" type="text"></div>
+            <h4 id="h4Movie">Select Movie Genres:</h4>
+            <div id="divGenerosMovies"></div>
+            <p><button type="submit">Search</button></p>
+        </form>
+        <form method="GET" action="results.html" id="generosSeries">
+            <h4 id="h4Serie">Enter Keywords:</h4>
+            <div class="inputDiv"><input id="keywordsSeries" type="text"></div>
+            <h4 id="h4Serie">Select Series Genres:</h4>
+            <div id="divGenerosSeries"></div>
+            <p><button type="submit">Search</button></p>
+        </form>
+    
+        </div>
+
+        <h3 id="yourResults">Showing results for your filtered search.</h3>
+
     <section class="results">
 
         
