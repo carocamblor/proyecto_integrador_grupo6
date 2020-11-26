@@ -16,6 +16,15 @@ window.onload = function () {
         }
         
     }
+    var nombre = localStorage.getItem("username")
+    if (nombre == null){
+    var name = prompt("Welcome to Wolf! What's your name?")
+    localStorage.setItem("username", name)
+    }else{
+        alert(`Welcome back ${nombre}`)
+    }
+
+
     
     fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=1`)
     .then(function (response) {
