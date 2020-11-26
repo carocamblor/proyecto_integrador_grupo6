@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,111 +11,131 @@
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
-    
+
     <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="shortcut icon" href="img/img_nav_footer/favicon_wolf.png" type="image/png">
     <script src="js/detail.js"></script>
-    <script src="js/atajos.js"></script> 
-   <script src="js/global.js"></script>
-  
-   
-   
-    
+    <script src="js/atajos.js"></script>
+    <script src="js/global.js"></script>
+
+
+
+
 </head>
+
 <body>
     <nav>
         <div class="navegador">
-        
+
             <div class="logo">
-            <a href="home.html"><img id="logo_grande" src="img/img_nav_footer/logo_grande.png" alt="logo wolf"></a>
-            <a href="home.html"><img id="logo_chico" src="img/img_nav_footer/logo_chico.png" alt="logo wolf"></a>
-        </div>
-        
-        <div class="buscador">
-            <form action="results.html" method="get" autocomplete="off">
-                <input type="text" name="q" placeholder="Search Wolf">
-            </form>
-        </div>
-        
-        <div class="menu">
-            <div class="boton_menu" id="boton_home"><a href="home.html"><h2>Home</h2></a></div>
-            <div class="boton_menu" id="boton_newreleases"><a href="favorites.html"><h2>Favorites</h2></a></div>
-            
-            <div class="boton_menu" id="boton_movies"><a href="movies.html"><h2>Movies</h2></a></div>
-                <div uk-dropdown class="dropdown" >
+                <a href="home.html"><img id="logo_grande" src="img/img_nav_footer/logo_grande.png" alt="logo wolf"></a>
+                <a href="home.html"><img id="logo_chico" src="img/img_nav_footer/logo_chico.png" alt="logo wolf"></a>
+            </div>
+
+            <div class="buscador">
+                <form action="results.html" method="get" autocomplete="off">
+                    <input type="text" name="q" placeholder="Search Wolf">
+                </form>
+            </div>
+
+            <div class="menu">
+                <div class="boton_menu" id="boton_home"><a href="home.html">
+                        <h2>Home</h2>
+                    </a></div>
+                <div class="boton_menu" id="boton_newreleases"><a href="favorites.html">
+                        <h2>Favorites</h2>
+                    </a></div>
+
+                <div class="boton_menu" id="boton_movies"><a href="movies.html">
+                        <h2>Movies</h2>
+                    </a></div>
+                <div uk-dropdown class="dropdown">
                     <ul class="uk-nav uk-dropdown-nav" id="menugenerospelis"></ul>
                 </div>
 
-            <div class="boton_menu" id="boton_series"><a href="series.html"><h2>Series</h2></a></div>
-                <div uk-dropdown class="dropdown" >
+                <div class="boton_menu" id="boton_series"><a href="series.html">
+                        <h2>Series</h2>
+                    </a></div>
+                <div uk-dropdown class="dropdown">
                     <ul class="uk-nav uk-dropdown-nav" id="menugenerosseries"></ul>
                 </div>
-        
-        </div>
-        
+
+            </div>
+
         </div>
 
         <div class="botones_mobile">
-            <div><a href="favorites.html"><h2 class="h2mobile">Favorites</h2></a></div>
+            <div><a href="favorites.html">
+                    <h2 class="h2mobile">Favorites</h2>
+                </a></div>
 
-            <div><a href="movies.html"><h2 class="h2mobile">Movies</h2></a></div>
+            <div><a href="movies.html">
+                    <h2 class="h2mobile">Movies</h2>
+                </a></div>
 
-            <div><a href="series.html"><h2 class="h2mobile">Series</h2></a></div>
+            <div><a href="series.html">
+                    <h2 class="h2mobile">Series</h2>
+                </a></div>
 
         </div>
-        
+
     </nav>
 
     <section>
-    <article class="pelicula">
-       
-        <div class="descripcion_peli" id="titulojs">
-            
-        </div>
+        <article class="pelicula">
 
-        <div class="acciones_usuario_mobile">
-            <img class="addFavorite" src="img/img_movie_detail/corazon.png" alt="favorites">
-            <img class="removeFavorite" src="img/img_movie_detail/share.png" alt="share">
-            <img src="img/img_movie_detail/rate.png" alt="rate">
-        </div>
-        
-        <div class="columna_acciones_y_similares_desktop">
+            <div class="descripcion_peli" id="titulojs">
 
-            <div class="acciones_usuario_desktop">
-                <img id="addFavorite" src="img/img_movie_detail/corazon.png" alt="favorites">
-                <img id="removeFavorite" src="img/img_movie_detail/deslike.png" alt="">
-                <img id="share" src="img/img_movie_detail/share.png" alt="share">
-                <img src="img/img_movie_detail/rate.png" alt="rate">
             </div>
 
-        <div class="contenedor_titulos_similares" >
-            <h1 id="titulos_similares">More Like This</h1>
-            <div class="titulos_similares" id="similares"></div>
-        </div>
-        </div>
- 
-    </article>
-</section>
+            <!-- <div class="acciones_usuario_mobile"> -->
+            <!-- <img class="addFavorite" src="img/img_movie_detail/corazon.png" alt="favorites"> -->
+            <!-- <img class="removeFavorite" src="img/img_movie_detail/share.png" alt="share"> -->
+            <!-- <img src="img/img_movie_detail/rate.png" alt="rate"> -->
+            <!-- </div> -->
 
-<footer>
-    <article id="redes">
-        <div class="redes_sociales"><a href="https://www.instagram.com"><img src="img/img_nav_footer/instagram.png" alt="instagram"></a></div>
-        <div class="redes_sociales"><a href="https://www.youtube.com/"><img src="img/img_nav_footer/youtube.png" alt="youtube"></a></div>
-        <div class="redes_sociales"><a href="https://www.twitter.com"><img src="img/img_nav_footer/twitter.png" alt="twitter"></a></div>
-        <div class="redes_sociales"><a href="https://www.tumblr.com"><img src="img/img_nav_footer/tumblr.png" alt="tumblr"></a></div>
-    </article>
-    <article id="links_footer">
-        <a href=""> Help</a>
-        <a href=""> About Us</a>
-        <a href=""> Privacy Policy</a>
-    </article>
-    <article>
-        <h4>&#169 2020 Wolf & Co.</h4>
-        <h4>Carolina Camblor - Carlos Escobar - Josefina Martinez Frugoni</h4>
-        <img class="logo_tmdb" src="img/img_nav_footer/logo_tmdb.svg" alt="logo tmdb">
-    </article>
-</footer>
+            <div class="columna_acciones_y_similares_desktop">
+
+                <div class="acciones_usuario_desktop">
+                    <img id="addFavorite" src="img/img_movie_detail/corazon.png" alt="favorites">
+                    <img id="removeFavorite" src="img/img_movie_detail/deslike.png" alt="">
+                    <img id="share" src="img/img_movie_detail/share.png" alt="share">
+                    <img src="img/img_movie_detail/rate.png" alt="rate">
+                </div>
+            </div>
+
+            <div class="contenedor_titulos_similares">
+                <h1 id="titulos_similares">More Like This</h1>
+                <div class="titulos_similares" id="similares"></div>
+            </div>
+
+        </article>
+    </section>
+
+    <footer>
+        <article id="redes">
+            <div class="redes_sociales"><a href="https://www.instagram.com"><img src="img/img_nav_footer/instagram.png"
+                        alt="instagram"></a></div>
+            <div class="redes_sociales"><a href="https://www.youtube.com/"><img src="img/img_nav_footer/youtube.png"
+                        alt="youtube"></a></div>
+            <div class="redes_sociales"><a href="https://www.twitter.com"><img src="img/img_nav_footer/twitter.png"
+                        alt="twitter"></a></div>
+            <div class="redes_sociales"><a href="https://www.tumblr.com"><img src="img/img_nav_footer/tumblr.png"
+                        alt="tumblr"></a></div>
+        </article>
+        <article id="links_footer">
+            <a href=""> Help</a>
+            <a href=""> About Us</a>
+            <a href=""> Privacy Policy</a>
+        </article>
+        <article>
+            <h4>&#169 2020 Wolf & Co.</h4>
+            <h4>Carolina Camblor - Carlos Escobar - Josefina Martinez Frugoni</h4>
+            <img class="logo_tmdb" src="img/img_nav_footer/logo_tmdb.svg" alt="logo tmdb">
+        </article>
+    </footer>
 
 </body>
+
 </html>

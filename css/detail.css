@@ -1,4 +1,4 @@
-#removeFavorite{
+#removeFavorite {
     display: none;
 }
 
@@ -16,23 +16,25 @@ p {
     font-family: georgia;
 }
 
-h3{
+h3 {
     margin: 1vh 0 1vh 0;
     color: white;
     font-family: georgia;
 }
 
-ul{
+ul {
     margin: 0;
     list-style: none;
     padding: 0;
 }
-ul#genresDetail li a{
+
+ul#genresDetail li a {
     font-family: georgia;
     font-size: 16px;
     color: white;
 }
-ul#genresDetail li a:hover{
+
+ul#genresDetail li a:hover {
     color: #0adae9;
     font-weight: bold;
 
@@ -66,30 +68,30 @@ div.contenedor_poster {
 img.poster {
     width: 100%;
     height: auto;
-    
+
 
 }
 
 
-#stars{
+#stars {
     width: 80%;
 }
 
 /*caja solo para series detail*/
 
-.episodio_mobile{
+.episodio_mobile {
     width: 96%;
     padding: 10px;
     background: #303030;
     border-radius: 5px;
 }
 
-.episodio_mobile img{
+.episodio_mobile img {
     width: 40%;
 }
 
 /*acciones usuarios, segunda/tercera caja*/
-.acciones_usuario_mobile{
+/* .acciones_usuario_mobile{
     padding: 10px;
     background: #303030;
     border-radius: 5px;
@@ -98,11 +100,11 @@ img.poster {
     width: 96%;
     justify-items: center;
 
-}
+} */
 
-.acciones_usuario_mobile img{
+/* .acciones_usuario_mobile img{
     width: 40%;
-}
+} */
 
 /*caja titulos similares*/
 
@@ -115,7 +117,7 @@ img.poster {
     height: fit-content;
 }
 
-div.titulos_similares{
+div.titulos_similares {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
@@ -124,28 +126,40 @@ div.titulos_similares{
 .titulos_similares img {
     width: 100%;
     height: 163px;
-    display:block;
+    display: block;
 }
 
-.columna_acciones_y_similares_desktop{
+.columna_acciones_y_similares_desktop {
     display: flex;
     justify-content: flex-start;
 }
 
 /*para que no se vea en mobile*/
 
-#sinopsistablet{
-    display:none;
-}
-#titulotablet{
-    display: none;
-}
-#peliculastablet{
+#sinopsistablet {
     display: none;
 }
 
-.acciones_usuario_desktop{
+#titulotablet {
     display: none;
+}
+
+#peliculastablet {
+    display: none;
+}
+
+.acciones_usuario_desktop {
+    padding: 10px;
+    background: #303030;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 96%;
+    justify-items: center;
+}
+
+.acciones_usuario_desktop img {
+    width: 40%;
 }
 
 .episodio_desktop {
@@ -159,52 +173,56 @@ iframe {
 }
 
 /*ipad*/
-@media(min-width:768px){
+@media(min-width:768px) {
 
 
-h1{
-    font-size: xx-large;
-}
-p{
-    font-size: larger;
-}
-ul#genresDetail li a{
-    font-size: larger;
+    h1 {
+        font-size: xx-large;
+    }
 
-}
+    p {
+        font-size: larger;
+    }
 
-.episodio_mobile img{
-    width: 22%;
-}
+    ul#genresDetail li a {
+        font-size: larger;
 
-div.titulos_similares{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+    }
 
-.titulos_similares img {
-    height: 260px;
-}
+    .episodio_mobile img {
+        width: 22%;
+    }
 
-#titulotablet{
-    display:block;
-}
+    div.titulos_similares {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 
-#peliculastablet{
-    display: block;
-}
+    .titulos_similares img {
+        height: 260px;
+    }
 
-.acciones_usuario_mobile {
+    #titulotablet {
+        display: block;
+    }
+
+    #peliculastablet {
+        display: block;
+    }
+
+    /* .acciones_usuario_mobile {
     display: none;
+} */
+
+    #titulomobile {
+        display: none;
+    }
+
 }
 
-#titulomobile{
-    display: none;
-}
 
-}
 
 /*desktop*/
-@media(min-width: 1024px){
+@media(min-width: 1024px) {
 
     /*dos columnas grandes*/
     article.pelicula {
@@ -219,30 +237,34 @@ div.titulos_similares{
     div.descripcion_peli {
         width: 100%;
     }
+
     div.contenedor_poster {
         grid-template-columns: 59% 40%;
     }
-    
+
     #stars {
         width: 40%;
         height: auto;
     }
 
-    #sinopsistablet{
-        display:block;
+    #sinopsistablet {
+        display: block;
     }
-    #sinopsismobile{
+
+    #sinopsismobile {
         display: none;
     }
 
     /*solo para series detail*/
-    .episodio_desktop img{
+    .episodio_desktop img {
         width: 30%;
     }
-    .episodio_mobile{
+
+    .episodio_mobile {
         display: none;
     }
-    .episodio_desktop{
+
+    .episodio_desktop {
         display: block;
         padding: 10px;
         background: #3d3d3d;
@@ -252,54 +274,57 @@ div.titulos_similares{
 
     /*solo para movie*/
     iframe {
-        overflow: hidden; height: 190px;
+        overflow: hidden;
+        height: 190px;
         width: 100%;
         display: block;
     }
 
     /*titulos similares*/
-    div.titulos_similares{
+    div.titulos_similares {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    div.contenedor_titulos_similares{
+    div.contenedor_titulos_similares {
         width: 100%;
         margin: 0;
-        
+
     }
 
     .titulos_similares img {
         height: 185px;
     }
 
-    h1#titulos_similares{
+    h1#titulos_similares {
         font-size: x-large;
     }
 
     /*acciones usuario desktop*/
-    .acciones_usuario_desktop{
+    .acciones_usuario_desktop {
         padding: 10px;
         background: #303030;
         border-radius: 5px;
-        display: grid;
+        /* display: grid; */
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         width: 100%;
         justify-items: center;
         align-items: center;
     }
-    .acciones_usuario_desktop img{
+
+    .acciones_usuario_desktop img {
         width: 35%;
     }
-    .columna_acciones_y_similares_desktop{
+
+    .columna_acciones_y_similares_desktop {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 7px;
     }
 
-    /*para que no se vea*/    
-    #peliculastablet{
+    /*para que no se vea*/
+    #peliculastablet {
         display: none;
     }
 }
