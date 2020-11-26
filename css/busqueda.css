@@ -1,0 +1,48 @@
+form#generosSeries, form#generosMovies {
+    display: none;
+}
+.inputCheckboxGeneros{
+    height: auto;
+    width: auto;
+}
+h1 {
+    color: white;
+    font-family: georgia;
+    font-weight: bold;
+    margin: 1%;
+    font-size: xx-large;
+}
+h3 {
+    color: white;
+    font-family: georgia;
+    font-weight: bold;
+    margin: 1%;
+    font-size: x-large;
+}
+h4 {
+    color: white;
+    font-family: georgia;
+    font-weight: bold;
+    margin: 1%;
+    font-size: large;
+    display: none;
+}
+button{
+    font-size: large;
+    font-family: georgia;
+    font-weight: 600;
+    margin: 1%;
+    background-color:#87dce2;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    color: #008791;
+    width: 11%;
+    transition: box-shadow .3s;
+}
+button:hover{
+    box-shadow: 0 0 10px #aef8fd;
+}
+p{
+    margin: 1%;
+}

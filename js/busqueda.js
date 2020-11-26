@@ -6,6 +6,8 @@ window.onload = function () {
   var botonSeries = document.querySelector('#botonSeries')
   var generosMovies = document.querySelector('#generosMovies')
   var generosSeries = document.querySelector('#generosSeries')
+  var h4Movie = document.querySelector('#h4Movie')
+  var h4Serie = document.querySelector('#h4Serie')
   
   //var keywords = document.querySelector('#keyMovie').value
 
@@ -20,10 +22,10 @@ window.onload = function () {
         for (let i = 0; i < data.genres.length; i++) {
           const element = data.genres[i];
           generosMovies.innerHTML +=`
-          <input type="checkbox" name="generosMovies" value="${element.id}"> <label>${element.name}<label>
+          <span><input class="inputCheckboxGeneros" type="checkbox" name="generosMovies" value="${element.id}"> <label>${element.name}</label></span>
           `
         }
-        generosMovies.innerHTML +=`<p><button type="submit">Search</button></p>`
+        generosMovies.innerHTML +=`<br><p><button type="submit">Search</button></p>`
       })
       .catch(function(error) {
         console.log("Error: " + error);
@@ -37,7 +39,7 @@ window.onload = function () {
         for (let i = 0; i < data.genres.length; i++) {
           const element = data.genres[i];
           generosSeries.innerHTML +=`
-          <input type="checkbox" name="generosMovies" value="${element.id}"> <label>${element.name}<label>
+          <input class="inputCheckboxGeneros" type="checkbox" name="generosMovies" value="${element.id}"> <label>${element.name}</label>
           `
         }
         generosSeries.innerHTML +=`<p><button type="submit">Search</button></p>`
@@ -49,11 +51,16 @@ window.onload = function () {
       botonMovies.addEventListener('click', function(){
         generosMovies.style.display = 'block'
         generosSeries.style.display = 'none'
+        h4Movie.style.display = 'block'
+        h4Serie.style.display = 'none'
       })
 
       botonSeries.addEventListener('click', function(){
         generosSeries.style.display = 'block'
         generosMovies.style.display = 'none'
+        h4Serie.style.display = 'block'
+        h4Movie.style.display = 'none'
+        
       })
 
       
