@@ -16,13 +16,15 @@ window.onload = function () {
         }
         
     }
-    var nombre = localStorage.getItem("username")
-    if (nombre == null){
-    var name = prompt("Welcome to Wolf! What's your name?")
-    localStorage.setItem("username", name)
-    }else{
-        alert(`Welcome back ${nombre}`)
-    }
+
+    var queryString = location.search
+    var queryStringObj = new URLSearchParams(queryString)
+    var user = queryStringObj.get("User")
+    localStorage.setItem("username", user)
+
+
+
+   
 
 
     

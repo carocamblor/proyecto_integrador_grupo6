@@ -1,4 +1,9 @@
 window.addEventListener('load', function(){
+    var nombre = localStorage.getItem("username")
+    var h1Favoritos = document.querySelector("#h1Favoritos")
+    function capitalize(nombre) {return nombre[0].toUpperCase() + nombre.slice(1);}
+    var nombreConMayuscula = capitalize(nombre)
+    h1Favoritos.innerHTML += `${nombreConMayuscula} favorites`
     
     var preferidos = document.querySelector('.preferidos')
     var noFavs = document.querySelector('#noFavs')
