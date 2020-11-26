@@ -23,6 +23,7 @@ window.addEventListener('load', function(){
         divAdvSearch.style.display = 'none'
         h1results.innerHTML = `At Wolf you can search for any movie or series.`
         searchResults.style.display='none'
+        yourResults.style.display='none'
       }
 
       
@@ -169,7 +170,9 @@ window.addEventListener('load', function(){
             }
         }
         if(busquedaGenerosSeries.length === 0){
-          alert('please select at least one genre')
+          yourResults.style.display = 'block'
+            searchResults.style.display='none'
+            yourResults.innerHTML = `Please select at least one genre.`
         }else{
         console.log(busquedaGenerosSeries)
         var generosParaBuscarSeries = busquedaGenerosSeries.toString()
@@ -181,15 +184,24 @@ window.addEventListener('load', function(){
           return response.json()
         })
         .then(function(data) {
-          yourResults.style.display = 'block'
-          for (let i = 0; i < data.results.length; i++) {
-            const element = data.results[i];
-            searchResults.innerHTML +=`
-            <article>
-                <a href="movies_detail.html?tipo=tv&id=${element.id}"><img src="${imgURL}${element.poster_path}" alt="${element.title}"></a>
-              </article>
-            `
+          if (data.results.length === 0) {
+            yourResults.style.display = 'block'
+            searchResults.style.display='none'
+            yourResults.innerHTML = `No titles match your search.`
+          } else {      
+            yourResults.style.display ='block'   
+            searchResults.style.display='grid'
+            yourResults.innerHTML = `Showing results for your filtered search.`
+            for (let i = 0; i < data.results.length; i++) {
+              const element = data.results[i];
+          
+              searchResults.innerHTML +=`
+              <article>
+                  <a href="movies_detail.html?tipo=tv&id=${element.id}"><img src="${imgURL}${element.poster_path}" alt="${element.title}"></a>
+                </article>
+              `
           }
+        }
         })
         .catch(function(error) {
           console.log("Error: " + error);
