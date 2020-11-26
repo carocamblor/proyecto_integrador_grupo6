@@ -64,22 +64,29 @@
         
     </nav>
 
-    <h1>Wolf Advanced Search</h1>
+    <h1>Wolf Filtered Search</h1>
+
     <h3>What would you like to search for?</h3>
+
     <p> 
         <button id="botonMovies">Movies</button> 
         <button id="botonSeries">Series</button>
     </p>
+
     <h4 id="h4Movie">Select Movie Genres:</h4>
     <h4 id="h4Serie">Select Series Genres:</h4>
+
     <form action="respuesta.html" method="GET" id="generosMovies">
-        <!--<p><input id="keyMovie" type="text" name="keywords" placeholder="Enter Keywords"></p>-->
-
+        <div id="divGenerosMovies"></div>
+        <p><button type="submit">Search</button></p>
     </form>
-    <form method="GET" id="generosSeries">
-        
+    <form method="GET" action="respuesta.html" id="generosSeries">
+        <div id="divGenerosSeries"></div>
+        <p><button type="submit">Search</button></p>
     </form>
 
+    <h3 id="yourResults">Your search results:</h3>
+    
     <section id="results">
 
     </section>

@@ -1,9 +1,22 @@
 form#generosSeries, form#generosMovies {
     display: none;
 }
+h3#yourResults{
+    display: none;
+}
 .inputCheckboxGeneros{
     height: auto;
     width: auto;
+}
+div#divGenerosSeries, div#divGenerosMovies{
+    margin: 1%;
+}
+span{
+    background: #333333;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
 }
 h1 {
     color: white;
@@ -45,4 +58,37 @@ button:hover{
 }
 p{
     margin: 1%;
+}
+label{
+    font-family: georgia;
+    font-size: large;
+    color: white;
+    margin: 5px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 0.6%;
+    column-gap: 2%;
+    margin: 1%;
+}
+section article a img{
+    width: 100%;
+    display: block;
+}
+
+@media (min-width: 768px){
+    section{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 1.5%;
+    }
+}
+
+@media (min-width: 1024px){
+    section{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 1%;
+        row-gap: 1.8%;
+        margin-bottom: 3%;
+    }
 }

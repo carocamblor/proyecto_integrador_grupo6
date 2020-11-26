@@ -167,16 +167,18 @@ div .logo {
     align-items: center;
     margin-left: 10px;
 }
-
-.boton_menu{
+div#botonFilter{
+    width: 50%;
+}
+.boton_menu, #botonFilter{
     transition: box-shadow .3s;
 }
 
-.boton_menu:hover{
+.boton_menu:hover, #botonFilter:hover{
     box-shadow: 0 0 8px #494949;
 }
 
-.boton_menu h2 {
+.boton_menu h2, #botonFilter h2{
     margin: 0;
     font-size: 19px;
     font-weight: bold;
@@ -196,7 +198,7 @@ div .botones_mobile {
 }
 
 
-.menu .boton_menu {
+.menu .boton_menu, #botonFilter {
     height: 70%;
     background-color: rgb(48, 48, 48);
     border-radius: 5px;
