@@ -10,6 +10,7 @@ window.onload = function () {
   var h4Serie = document.querySelector('#h4Serie')
   var divGenerosMovies = document.querySelector('#divGenerosMovies')
   var divGenerosSeries = document.querySelector('#divGenerosSeries')
+  var keywords = document.querySelector('#keywords')
   var yourResults = document.querySelector('#yourResults')
 
     //FETCH ARRAY GENEROS MOVIES
@@ -63,7 +64,7 @@ window.onload = function () {
 
       //CUANDO SUMBIT EL FORM DE MOVIES
       generosMovies.addEventListener('submit', function(event){
-        event.preventDefault()
+      //  event.preventDefault()
         var busquedaGenerosMovies = []
         busquedaGenerosMovies.length = 0
         resultados.innerHTML = ''
@@ -110,6 +111,7 @@ window.onload = function () {
         var busquedaGenerosSeries = []
         busquedaGenerosSeries.length = 0
         resultados.innerHTML = ''
+        var searchKeywords = keywords.value
         var arrayGenerosSeries = Array.from(generosSeries.elements)
         console.log(arrayGenerosSeries)
         for (let i = 0; i < arrayGenerosSeries.length; i++) {
@@ -123,7 +125,7 @@ window.onload = function () {
         console.log(generosParaBuscarSeries)
 
         //FETCH SERIES
-        fetch(`https://api.themoviedb.org/3/discover/tv?api_key=e57721559c7ea59e5e81582798c16c18&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${generosParaBuscarSeries}`)
+        fetch(`https://api.themoviedb.org/3/discover/tv?api_key=e57721559c7ea59e5e81582798c16c18&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=${generosParaBuscarSeries}&include_null_first_air_dates=false&with_keywords=${searchKeywords}`)
         .then(function(response) {
           return response.json()
         })
