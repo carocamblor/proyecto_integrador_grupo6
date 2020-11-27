@@ -1,14 +1,16 @@
 .welcome{
-    font-size: xx-large;
+    
+    font-size: 600%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     font-weight: bolder;
-    align-items: center;
-    margin-top: 5%;
-    margin-left: 23%;
-    margin-right: 10%;
+    justify-content: center;
+   
 }
-
+.divwel{
+    display: flex;
+    justify-content: center;
+}
 body{
     background-image: url('../img/backgroung\ welcome.png');
 }
@@ -22,7 +24,7 @@ body{
     font-size: large;
     font-family: georgia;
     font-weight: 600;
-    margin-top: 5px;
+    margin-top: 10px;
     background-color: #08daea;
     border: none;
     border-radius: 5px;
@@ -34,9 +36,6 @@ body{
 }
 
 .inputwelcome{
- 
-    margin-left: 15%;
-    width: 13%;
     background-color: transparent;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -50,6 +49,7 @@ body{
 .separacion{
     display: grid;
    grid-template-rows: 1,1;
+   margin-top: 10%;
    
 }
 
@@ -75,5 +75,8 @@ input{
     }
     .buttonwelcome{
         margin-top: 10%;
+    }
+    .welcome{
+        font-size: xx-large;
     }
 }
