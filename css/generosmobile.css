@@ -3,8 +3,24 @@ section{
     grid-template-columns: 1fr 1fr 1fr;
 }
 .divgenero{
-    background-color: aquamarine;
+    background-color:  rgb(48, 48, 48);
     border-radius: 5px;
     padding: 5px;
     margin: 10%;
+}
+
+h3{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+      color: white;
+     font-weight: lighter;
+     margin: 0;
+     margin-left: 2%;
+   
+}
+
+.divgenero a{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color:  rgb(206, 204, 204);
+     font-weight: lighter;
+     font-size: 95%;
 }

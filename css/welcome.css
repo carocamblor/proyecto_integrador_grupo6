@@ -7,6 +7,8 @@
     justify-content: center;
    
 }
+
+
 .divwel{
     display: flex;
     justify-content: center;
@@ -35,19 +37,9 @@ body{
     
 }
 
-.inputwelcome{
-    background-color: transparent;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 700;
-    border: white;
-    border-radius: 5px;
-    padding: 7px;  
-    
-}
 
 .separacion{
-    display: grid;
+   display: grid;
    grid-template-rows: 1,1;
    margin-top: 10%;
    
@@ -57,12 +49,21 @@ input{
     width: 90%;
     height: 50px;
     border-radius: 30px;
-    background: #303030;
-    border: none;
-    color: white;
+    background:transparent;
+    border: white;
+    color:  rgb(48, 48, 48);;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bolder;
 }
+
+::placeholder{
+    color:  rgb(48, 48, 48);;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
 @media only screen and (max-width: 420px){
     body{
         background-image: url('../img/backgroung\ welcome\ mobile.png');
