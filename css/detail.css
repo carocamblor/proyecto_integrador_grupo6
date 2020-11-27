@@ -89,7 +89,7 @@ img.poster {
 }
 
 /*acciones usuarios, segunda/tercera caja*/
-.acciones_usuario_mobile{
+/*.acciones_usuario_mobile{
     padding: 10px;
     background: #303030;
     border-radius: 5px;
@@ -102,7 +102,7 @@ img.poster {
 
 .acciones_usuario_mobile img{
     width: 40%;
-}
+}*/
 
 /*caja titulos similares*/
 
@@ -128,7 +128,7 @@ div.titulos_similares{
 }
 
 .columna_acciones_y_similares_desktop{
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
@@ -145,7 +145,15 @@ div.titulos_similares{
 }
 
 .acciones_usuario_desktop{
-    display: none;
+    display: block;
+    padding: 10px;
+    background: #303030;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom:2%;
+    justify-items: center;
+    gap: 15%;
 }
 
 .episodio_desktop {
@@ -193,9 +201,9 @@ div.titulos_similares{
     display: block;
 }
 
-.acciones_usuario_mobile {
+/*.acciones_usuario_mobile {
     display: none;
-}
+}*/
 
 #titulomobile{
     display: none;

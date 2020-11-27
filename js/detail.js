@@ -65,7 +65,6 @@ removeFavorite.addEventListener('click', function (){
     for (let i = 0; i < favs.length; i++) {
         const element = favs[i];
         if ((element.id == idElegido)&&(element.tipo == tipo)){
-            alert('asjdask')
             console.log(`esta es la que hay que borrar ${element.id} con tipo ${element.tipo}`)
             favs.splice(i,1);
             localStorage.setItem("favoritos", JSON.stringify(favs))
